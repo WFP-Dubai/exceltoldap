@@ -1,0 +1,1301 @@
+version: 1
+
+dn: ou=devices,dc=emergency,dc=lu
+objectClass: organizationalUnit
+objectClass: top
+ou: devices
+
+dn: cn=trackMe9742,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: trackMe9742
+description: TrackMe of John Doe
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9750,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: trackMe9750
+description: HTC Phone BHO
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg01,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg01
+description: System temperature of nreg01
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg01,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTD3EA6C,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTD3EA6C
+description: GPS-Haiti-car1
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTD3510A,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTD3510A
+description: GPS-Haiti-car2
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTC82B05,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTC82B05
+description: GPS-Haiti-car3
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST721619,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST721619
+description: GPS-Haiti-car4
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST088F65,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST088F65
+description: GPS-Haiti-car5
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST511566,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST511566
+description: GPS-Haiti-car6
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST741505,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST741505
+description: GPS-Haiti-car7
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST9B514B,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST9B514B
+description: GPS-Haiti-car8
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST27978D,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST27978D
+description: GPS-Haiti-car9
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST553D15,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST553D15
+description: GPS-Haiti-car10
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST9BA8F8,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST9BA8F8
+description: GPS-Haiti-car11
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST41127C,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST41127C
+description: GPS-Haiti-car12
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTF6FEE6,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTF6FEE6
+description: GPS-Haiti-car13
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTB26AFE,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTB26AFE
+description: GPS-Haiti-car14
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST6D2E26,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST6D2E26
+description: GPS-Haiti-car15
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST5F4F9C,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST5F4F9C
+description: GPS-Haiti-car16
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST19EC16,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST19EC16
+description: GPS-Haiti-car17
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST76EEEE,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST76EEEE
+description: GPS-Haiti-car18
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST5B2557,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST5B2557
+description: GPS-Haiti-car20
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST9FB87B,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST9FB87B
+description: GPS-Haiti-car21
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST9A0ADA,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST9A0ADA
+description: GPS-Haiti-car23
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST690C40,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST690C40
+description: GPS-Haiti-car24
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST6AAC09,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST6AAC09
+description: GPS-Haiti-car25
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST891BCB,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST891BCB
+description: GPS-Haiti-car26
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST553E29,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST553E29
+description: GPS-Haiti-car27
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST88B770,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST88B770
+description: GPS-Haiti-car28
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTED79BB,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTED79BB
+description: GPS-Haiti-car29
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTFE7052,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTFE7052
+description: GPS-Haiti-car30
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST7F2A30,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST7F2A30
+description: GPS-Haiti-car31
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST4760C5,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST4760C5
+description: GPS-Haiti-car32
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST79CA70,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST79CA70
+description: GPS-Haiti-car33
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST0F54A1,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST0F54A1
+description: GPS-Haiti-car34
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTCE90F5,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTCE90F5
+description: GPS-Haiti-car35
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST3F42F5,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST3F42F5
+description: GPS-Haiti-car36
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST1966C4,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST1966C4
+description: GPS-Haiti-car37
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTD10F20,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTD10F20
+description: GPS-Haiti-car38
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST348EAE,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST348EAE
+description: GPS-Haiti-car40
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST8267F0,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST8267F0
+description: GPS-Haiti-car41
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST497A18,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST497A18
+description: GPS-Haiti-car42
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTD29719,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTD29719
+description: GPS-Haiti-car43
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTCE0B62,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTCE0B62
+description: GPS-Haiti-car44
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTA6BB23,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTA6BB23
+description: GPS-Haiti-car45
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST68CBE4,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST68CBE4
+description: GPS-Haiti-car46
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST58ABB4,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST58ABB4
+description: GPS-Haiti-car47
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTD5EAEE,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTD5EAEE
+description: GPS-Haiti-car48
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTD08F67,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTD08F67
+description: GPS-Haiti-car49
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST9D668A,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST9D668A
+description: GPS-Haiti-car50
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTA15FA9,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DSTA15FA9
+description: GPS-Haiti-car52
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nrap02,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nrap02
+description: System temperature of nrap02
+devicecapability: cn=sr-nsctemperaturedown,ou=sensorsThresholds,dc=emergency
+ ,dc=lu
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nrap02,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nrap03,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nrap03
+description: System temperature of nrap03
+devicecapability: cn=sr-nsctemperaturedown,ou=sensorsThresholds,dc=emergency
+ ,dc=lu
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+domain: cn=default,cn=mw-A1-nrap03,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nrap04,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nrap04
+description: System temperature of nrap04
+devicecapability: cn=sr-nsctemperaturedown,ou=sensorsThresholds,dc=emergency
+ ,dc=lu
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+domain: cn=default,cn=mw-A1-nrap04,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nrap05,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nrap05
+description: System temperature of nrap05
+devicecapability: cn=sr-nsctemperaturedown,ou=sensorsThresholds,dc=emergency
+ ,dc=lu
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nrap05,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nrap07,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nrap07
+description: System temperature of nrap07
+devicecapability: cn=sr-nsctemperaturedown,ou=sensorsThresholds,dc=emergency
+ ,dc=lu
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nrap07,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nrap06,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nrap06
+description: System temperature of nrap06
+devicecapability: cn=sr-nsctemperaturedown,ou=sensorsThresholds,dc=emergency
+ ,dc=lu
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nrap06,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg02,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg02
+description: System temperature of nreg02
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg02,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg03,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg03
+description: System temperature of nreg03
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg03,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg04,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg04
+description: System temperature of nreg04
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg04,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg05,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg05
+description: System temperature of nreg05
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg05,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg06,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg06
+description: System temperature of nreg06
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg06,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg07,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg07
+description: System temperature of nreg07
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg07,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg08,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg08
+description: System temperature of nreg08
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg08,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg09,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg09
+description: System temperature of nreg09
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg09,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg10,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg10
+description: System temperature of nreg10
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg10,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg11,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg11
+description: System temperature of nreg11
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg11,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nreg12,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nreg12
+description: System temperature of nreg12
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nreg12,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST21497D,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST21497D
+description: Satamatics DST21497D
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=C-GRGK,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: C-GRGK
+description: Plane C-GRGK
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST2931A3,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST2931A3
+description: Satamatics DST2931A3
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST21C84B,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST21C84B
+description: Satamatics DST21C84B
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST726370,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST726370
+description: Satamatics DST726370
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTC08198,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DSTC08198
+description: Satamatics DSTC08198
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST2F6246,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST2F6246
+description: Satamatics DST2F6246
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST77E262,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST77E262
+description: Satamatics DST77E262
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTA55C9E,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DSTA55C9E
+description: Satamatics DSTA55C9E
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST30171B,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST30171B
+description: Satamatics DST30171B
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTEE3219,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DSTEE3219
+description: Satamatics DSTEE3219
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST93D148,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST93D148
+description: Satamatics DST93D148
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST717E8F,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST717E8F
+description: Satamatics DST717E8F
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST095B87,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST095B87
+description: Satamatics DST095B87
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST6707F0,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST6707F0
+description: Satamatics DST6707F0
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST651B08,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST651B08
+description: Satamatics DST651B08
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTC114F4,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DSTC114F4
+description: Satamatics DSTC114F4
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST6E66BF,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST6E66BF
+description: Satamatics DST6E66BF
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST66AF0B,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST66AF0B
+description: Satamatics DST66AF0B
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=axis-nrap01,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: axis-nrap01
+description: NoSaCo Rapid (NSC-02-001)
+devicecapability: cn=camera,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST270404,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST270404
+description: Toyota Prado
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTB3B956,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DSTB3B956
+description: Satamatics DSTB3B956
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST2C59A1,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST2C59A1
+description: Satamatics DST2C59A1
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST2CF0FC,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST2CF0FC
+description: Satamatics DST2CF0FC
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9768,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9768
+description:: NDc5MDAwMDM1NjM2DQpQREEgaW4gRFhC
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9735,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9735
+description:: aVBob25lIDk3MzUNCihUb2JpYXMgQ2FybGFuZGVyKQ==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9757,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9757
+description:: VW5rbm93biBEZXZpY2UNCihNYXJ0aW4gS3Jpc3RlbnNlbik=
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9752,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9752
+description:: VW5rbm93biBEZXZpY2UNCihMdWlzIEFsdmFyYWRvKQ==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe5810,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe5810
+description:: VW5rbm93biBEZXZpY2UNClVua25vd24gVXNlcg==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe1,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe1
+description:: V2luZG93cyBNb2JpbGUgUGhvbmUNCihMdWlzIEFsdmFyYWRvKQ==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe5830,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe5830
+description:: TW90b1RSQk8gTW9iaWxlDQpVTi02Ny0xNjMx
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe5231,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe5231
+description:: TW90b1RSQk8gSGFuZGhlbGQNCkFyc2FsYW4gSGFzaG1pLCBGaW5hbmNl
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe5250,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe5250
+description:: TW90b1RSQk8gSGFuZGhlbGQNCkFzc3VtcHRhIFNhbWthbmdlLCBQcm9jdXJlbW
+ VudA==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe5800,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe5800
+description:: TW90b1RSQk8gSGFuZGhlbGQNCjEzMTkgNTgwMA0KSUYgOA==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe5850,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe5850
+description:: TW90b1RSQk8gSGFuZGhlbGQNCklGIDguNQ==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe5860,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe5860
+description:: TW90b1RSQk8gSGFuZGhlbGQNCg==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nrap02,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9762,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9762
+description:: UERBIA0KS2VuIEthenVuZ3UNCkVQSUMgbnVtYmVyOiAxMzE5IDUzNTI=
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9763,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9763
+description:: UERBDQpGYXJ1a2ggUXVyZXNoaQ==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9767,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9767
+description:: UERBIDAwMTAyMDM2Mzk3NA0KTHVpcyBBbHZhcmFkbw==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9766,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9766
+description:: UGhvbmUgKFdpbmRvd3MgUGhvbmUpDQo4MDI1MDg3OTIxMDENCkx1aXMgQWx2YX
+ JhZG8=
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9771,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9771
+description: Ekue's android phone
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe5513,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe5513
+description:: TW90b1RSQk8gSGFuZGhlbGQNCk5pZ2hhdCBBYnNoZWVuLCBTZWN1cml0eQ==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9756,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9756
+description:: UERBIE1DNzUNCldBVkUgbnVtYmVyIDM5NTkNCihTdWphbCk=
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9715,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9715
+description:: UERBIE1DNTUNCldhdmUgbnVtYmVyIDM5NTgNCihNYXJ0aW4p
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9714,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9714
+description:: UERBIENONTANCldhdmUgbnVtYmVyIDM5NjANCihBbGZyZWQpDQp1c2VyaWQ6IG
+ VwaWNocTE=
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe3952,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe3952
+description:: TW90b1RSQk8gSGFuZGhlbGQgDQpXQVZFIDM5NTIgDQooQ2Fyb2xpbmUp
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9758,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9758
+description:: aVBhZA0KKE1hcnRpbik=
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nrap05-osocc,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: nrap05-osocc
+description: Camera in the OSOCC
+devicecapability: cn=camera,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nrap05,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9772,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9772
+description:: aVBob25lDQooQWxla3NhbmRhcik=
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9011,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9011
+description:: TW90b1RSQk8gSGFuZGhlbGQNCjEzNDktOTAxMQ==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9012,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9012
+description:: TW90b1RSQk8gSGFuZGhlbGQNCjEzNDktOTAxMg==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9013,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9013
+description:: TW90b1RSQk8gSGFuZGhlbGQNCjEzNDktOTAxMw==
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9777,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9777
+description: iPhone (Jess)
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9779,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9779
+description:: aVBhZA0KKEFsZiBFbGxlZnNlbik=
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9780,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9780
+description:: aVBhZA0KKEdyZWcp
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe9781,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe9781
+description:: aVBob25lDQooTWFyayBQaGlsbGlwcyk=
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=trackMe3953,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: trackMe3953
+description:: TW90b1RSQk8gSGFuZGhlbGQNCldBVkUgMzk1Mw0KKE9zY2FyKQ0K
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST2DFCF2,ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: EMS-DST2DFCF2
+description: Satamatics DST2DFCF2
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST0027AB,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST0027AB
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=ASS-Team,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: ASS-Team
+description: GPS ASS Team
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=5H-EGG,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 5H-EGG
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=5Y-BNH,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 5Y-BNH
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=5Y-BVI,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 5Y-BVI
+description: Plane 5Y-BVI
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=5Y-BVO,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 5Y-BVO
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=5Y-BVX,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 5Y-BVX
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=5Y-BVY,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 5Y-BVY
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=5Y-BVZ,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 5Y-BVZ
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=5Y-BWG,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 5Y-BWG
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=5Y-BXH,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 5Y-BXH
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=5Y-BXI,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 5Y-BXI
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=5Y-WJF,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 5Y-WJF
+description: Plane 5Y-WJF
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=9774d56d682e549c,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: 9774d56d682e549c
+description: Samsung Tablet Computer
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+devicecapability: cn=camera,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=AFF-HB,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: AFF-HB
+description: Dummy value from the plane connector
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST002862,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST002862
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST033304,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST033304
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST032649,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST032649
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST004C51,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST004C51
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST01EBAB,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST01EBAB
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST021F08,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST021F08
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST036031,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST036031
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST0199E8,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST0199E8
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST00BA4E,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST00BA4E
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST020671,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST020671
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=EMS-DST01BF18,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: EMS-DST01BF18
+description: Created from Sensor Service
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=findmespot-0-8200672,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: findmespot-0-8200672
+description: Simon IHP Estonia
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=nrap01,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: nrap01
+description: System temperature of nrap01
+devicecapability: cn=sr-nsctemperaturedown,ou=sensorsThresholds,dc=emergency
+ ,dc=lu
+devicecapability: cn=sr-nsctemperatureup,ou=sensorsThresholds,dc=emergency,d
+ c=lu
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+
+dn: cn=findmespot-0-8219313,ou=devices,dc=emergency,dc=lu
+objectClass: top
+objectClass: mwdevice
+cn: findmespot-0-8219313
+description: Find me Spot ASS-01
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=void,cn=mw-ilink-dev,ou=middlewares,dc=emergency,dc=lu
+

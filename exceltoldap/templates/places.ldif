@@ -1,0 +1,660 @@
+version: 1
+
+dn: ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: organizationalUnit
+ou: places
+
+dn: cn=DATTA_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: DATTA_MILLS
+coord-latitude: 31.59237
+coord-longitude: 74.40371
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: LHOX011
+externalID: compas:LHOX011
+externalID: compasReporting:LHOX009
+
+dn: cn=AL-RAMZAN_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: AL-RAMZAN_MILLS
+coord-latitude: 31.66541
+coord-longitude: 74.30375
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: LHOX013
+externalID: compas:LHOX013
+externalID: compasReporting:LHOX009
+
+dn: cn=RAVI_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: RAVI_MILLS
+coord-latitude: 31.688711
+coord-longitude: 74.286172
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: LHOX016
+description: Reporting to LHOX009
+externalID: compas:LHOX016
+externalID: compasReporting:LHOX009
+
+dn: cn=Nasir_Bagh_WH,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Nasir_Bagh_WH
+coord-latitude: 34.043906
+coord-longitude: 71.434006
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: PSHX002
+description: Reporting to PSHX001
+externalID: compas:PSHX002
+externalID: compasReporting:PSHX001
+
+dn: cn=MIRPUR_KHAS_HYDER_EDP,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: MIRPUR_KHAS_HYDER_EDP
+coord-latitude: 25.538921
+coord-longitude: 68.997186
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: MVMA014
+description: Reporting to HYDX003
+externalID: compas:MVMA014
+externalID: compasReporting:HYDX003
+
+dn: cn=WFP_PORT_QASIM_WH,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: WFP_PORT_QASIM_WH
+coord-latitude: 24.8324
+coord-longitude: 67.3095
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: KARX032
+description: Reporting to KARX001
+externalID: compas:KARX032
+externalID: compasReporting:KARX001
+
+dn: cn=CHASMA_ACHOZAI_WH,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: CHASMA_ACHOZAI_WH
+coord-latitude: 30.288886
+coord-longitude: 66.957753
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: QETX019
+externalID: compas:QETX019
+externalID: compasReporting:QETX001
+
+dn: cn=OK_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: OK_MILLS
+coord-latitude: 31.965789
+coord-longitude: 74.2234
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: LHOX017
+description: Reporting to LHOX009
+externalID: compas:LHOX017
+externalID: compasReporting:LHOX009
+
+dn: cn=TAJ_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: TAJ_FLOUR_MILLS
+coord-latitude: 28.43798
+coord-longitude: 70.25089
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: RIQX010
+description: Reporting to MSNX005
+externalID: compas:RIQX010
+externalID: compasReporting:MSNX005
+
+dn: cn=HM_IQBAL_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: HM_IQBAL_FLOUR_MILLS
+coord-latitude: 28.41816
+coord-longitude: 70.28939
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: RIQX011
+externalID: compas:RIQX011
+externalID: compasReporting:MSNX005
+
+dn: cn=CHAMAN_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: CHAMAN_FLOUR_MILLS
+coord-latitude: 28.43041
+coord-longitude: 70.24942
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: RIQX008
+externalID: compas:RIQX008
+externalID: compasReporting:MSNX005
+
+dn: cn=AL_FAZAL_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: AL_FAZAL_FLOUR_MILLS
+coord-latitude: 28.44387
+coord-longitude: 70.35445
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: RIQX007
+externalID: compas:RIQX007
+externalID: compasReporting:MSNX005
+
+dn: cn=AL_MUKHTAR_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: AL_MUKHTAR_FLOUR_MILLS
+coord-latitude: 28.43766
+coord-longitude: 70.31227
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: RIQX006
+externalID: compas:RIQX006
+externalID: compasReporting:MSNX005
+
+dn: cn=KOHSAR_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: KOHSAR_FLOUR_MILLS
+coord-latitude: 28.43217
+coord-longitude: 70.24832
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: RIQX005
+externalID: compas:RIQX005
+externalID: compasReporting:MSNX005
+
+dn: cn=AL_SHARIF_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: AL_SHARIF_FLOUR_MILLS
+coord-latitude: 28.38753
+coord-longitude: 70.35246
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: RIQX004
+externalID: compas:RIQX004
+externalID: compasReporting:MSNX005
+
+dn: cn=UMERKOT_HYDER_EDP,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: UMERKOT_HYDER_EDP
+coord-latitude: 25.367358
+coord-longitude: 69.723334
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: UIBA017
+description: Reporting to HYDX003
+externalID: compas:UIBA017
+externalID: compasReporting:HYDX003
+
+dn: cn=HYDERABAD_HUB,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: HYDERABAD_HUB
+coord-latitude: 25.371237
+coord-longitude: 68.296087
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: HYDX004
+externalID: compas:HYDX004
+externalID: compasReporting:HYDX003
+
+dn: cn=SAWERA_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: SAWERA_FLOUR_MILLS
+coord-latitude: 28.43773
+coord-longitude: 70.30881
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: RIQX003
+description: Reporting to MSNX005
+externalID: compas:RIQX003
+externalID: compasReporting:MSNX005
+
+dn: cn=PAKISTAN_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: PAKISTAN_FLOUR_MILLS
+coord-latitude: 30.220144
+coord-longitude: 66.958169
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: QETX027
+description: Reporting to QETX001
+externalID: compas:QETX027
+externalID: compasReporting:QETX001
+
+dn: cn=NAFEES_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: NAFEES_MILLS
+coord-latitude: 33.663637
+coord-longitude: 73.061391
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: I2EX010
+description: Reporting to ISBX002
+externalID: compas:I2EX010
+externalID: compasReporting:ISBX002
+
+dn: cn=SARHAD_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: SARHAD_MILLS
+coord-latitude: 33.6607
+coord-longitude: 73.060733
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: I2EX012
+description: Reporting to ISBX002
+externalID: compas:I2EX012
+externalID: compasReporting:ISBX002
+
+dn: cn=AL-KAUSAR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: AL-KAUSAR_MILLS
+coord-latitude: 33.656385
+coord-longitude: 73.050814
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: I2EX017
+externalID: compas:I2EX017
+externalID: compasReporting:ISBX002
+
+dn: cn=AL-JEHAN_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: AL-JEHAN_FLOUR_MILLS
+coord-latitude: 30.144917
+coord-longitude: 71.401944
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: MSNX006
+externalID: compas:MSNX006
+externalID: compasReporting:MSNX005
+
+dn: cn=MEHMOODA_MAQBOOL_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=l
+ u
+objectClass: place
+objectClass: top
+cn: MEHMOODA_MAQBOOL_FLOUR_MILLS
+coord-latitude: 30.140667
+coord-longitude: 71.399722
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: MSNX011
+description: Reporting to MSNX005
+externalID: compas:MSNX011
+externalID: compasReporting:MSNX005
+
+dn: cn=MULTAN_TNT_WAREHOUSE,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: MULTAN_TNT_WAREHOUSE
+coord-latitude: 30.131639
+coord-longitude: 71.393917
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: MSNX016
+description: Reporting to MSNX005
+externalID: compas:MSNX016
+externalID: compasReporting:MSNX005
+
+dn: cn=KARIM_SONS_FLOUR_MILL,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: KARIM_SONS_FLOUR_MILL
+coord-latitude: 30.240536
+coord-longitude: 71.528822
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: MSNX019
+externalID: compas:MSNX019
+externalID: compasReporting:MSNX005
+
+dn: cn=KARACHI_PORT_WAREHOUSE,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: KARACHI_PORT_WAREHOUSE
+coord-latitude: 24.828334
+coord-longitude: 67.28804
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: KARX005
+externalID: compas:KARX005
+externalID: compasReporting:KARX001
+
+dn: cn=PICT,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: PICT
+coord-latitude: 24.822215
+coord-longitude: 66.974214
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: KARX024
+description: Reporting to KARX001
+externalID: compas:KARX024
+externalID: compasReporting:KARX001
+
+dn: cn=KICT,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: KICT
+coord-latitude: 24.822215
+coord-longitude: 66.974214
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: KARX025
+externalID: compas:KARX025
+externalID: compasReporting:KARX001
+
+dn: cn=KARACHI_PORT_QUAY_SITE,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: KARACHI_PORT_QUAY_SITE
+coord-latitude: 24.822215
+coord-longitude: 66.974214
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: KARX026
+externalID: compas:KARX026
+externalID: compasReporting:KARX001
+
+dn: cn=AL_GHAZNAVI_FLOUR_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: AL_GHAZNAVI_FLOUR_MILLS
+coord-latitude: 30.288903
+coord-longitude: 66.95715
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: QETX024
+externalID: compas:QETX024
+externalID: compasReporting:QETX001
+
+dn: cn=dubai_wh,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: dubai_wh
+coord-latitude: 24.851998
+coord-longitude: 55.06491
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Dubai Warehouse
+
+dn: cn=SIHALA_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: SIHALA_MILLS
+coord-latitude: 33.666533
+coord-longitude: 73.059467
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: I2EX007
+description: Reporting to ISBX002
+externalID: compas:I2EX007
+externalID: compasReporting:ISBX002
+
+dn: cn=WFP_PORT_QASIM_WH_EXT,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: WFP_PORT_QASIM_WH_EXT
+coord-latitude: 24.834567
+coord-longitude: 67.310067
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+compasId: KARX039
+description: Reporting to KARX001
+externalID: compas:KARX039
+externalID: compasReporting:KARX001
+
+dn: cn=MartinsWH,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: MartinsWH
+coord-latitude: 41.737781
+coord-longitude: 12.356833
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: Martin's (Ware)House
+
+dn: cn=WFP_Khartoum,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: WFP_Khartoum
+coord-latitude: 15.54845
+coord-longitude: 32.558694
+type: cn=office,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+description:: S2hhcnRvdW0gUmVnaW9uYWwgT2ZmaWNlOiA=
+
+dn: cn=WFP_Nyala,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: WFP_Nyala
+coord-latitude: 12.065772
+coord-longitude: 24.892156
+type: cn=office,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+description: Nyala Area Office
+
+dn: cn=WFP_Nyala_WH,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: WFP_Nyala_WH
+coord-latitude: 12.085256
+coord-longitude: 24.909247
+type: cn=warehouse,ou=placeTypes,ou=resourcesType,dc=emergency,dc=lu
+description: Nyala Otash Warehouse
+
+dn: cn=KHT_Airport,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: KHT_Airport
+coord-latitude: 15.585177
+coord-longitude: 32.551306
+type: cn=airport,ou=resourcesTypes,dc=emergency,dc=lu
+description: Khartoum Airport
+
+dn: cn=WFP_Nyala_GH,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: WFP_Nyala_GH
+coord-latitude: 12.067578
+coord-longitude: 24.893867
+type: cn=guesthouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Nyala Guesthouse
+
+dn: cn=Peshawar,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Peshawar
+coord-latitude: 34.0111
+coord-longitude: 71.544
+type: cn=office,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Sub Office
+
+dn: cn=Quetta,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Quetta
+coord-latitude: 30.222286
+coord-longitude: 67.001172
+type: cn=office,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Sub Office
+
+dn: cn=Hyderabad,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Hyderabad
+coord-latitude: 25.385361
+coord-longitude: 68.355222
+type: cn=office,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Sub Office
+
+dn: cn=Karachi,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Karachi
+coord-latitude: 24.804417
+coord-longitude: 67.030667
+type: cn=office,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Sub Office
+
+dn: cn=Muzaffarabad,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Muzaffarabad
+coord-latitude: 34.3637
+coord-longitude: 73.4714
+type: cn=office,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Sub Office
+
+dn: cn=Lahore,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Lahore
+coord-latitude: 31.557
+coord-longitude: 74.339
+type: cn=office,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Sub Office
+
+dn: cn=Swat,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Swat
+coord-latitude: 35.277
+coord-longitude: 72.42
+type: cn=office,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Sub Office
+
+dn: cn=D.I.Khan,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: D.I.Khan
+coord-latitude: 31.8273
+coord-longitude: 70.9095
+type: cn=office,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Sub Office
+
+dn: cn=Islamabad,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Islamabad
+coord-latitude: 33.721266
+coord-longitude: 73.10617
+type: cn=office,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Country Office
+
+dn: cn=dubai,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: dubai
+coord-latitude: 24.89467
+coord-longitude: 55.071288
+type: cn=office,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: WFP Dubai Office
+
+dn: cn=Noshera,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Noshera
+coord-latitude: 34.008056
+coord-longitude: 71.934317
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: N81X001
+description: Reporting to PSHX001
+externalID: compas:N81X001
+externalID: compasReporting:PSHX001
+
+dn: cn=Sukkur,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Sukkur
+coord-latitude: 27.719966
+coord-longitude: 68.839614
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: CCBJ028
+description:: UmVwb3J0aW5nIHRvIENDQkowMDMNCg==
+externalID: compas:CCBJ028
+externalID: compasReporting:CCBJ003
+
+dn: cn=Alpuri,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Alpuri
+coord-latitude: 34.903726
+coord-longitude: 72.642165
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: ALXP002
+externalID: compas:ALXP002
+externalID: compasReporting:ALXP001
+
+dn: cn=MASKI_PUR_EDP,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: MASKI_PUR_EDP
+coord-latitude: 34.425231
+coord-longitude: 72.490189
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: ABX1002
+externalID: compas:ABX1002
+externalID: compasReporting:ABX1001
+
+dn: cn=Dircity_EDP,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: Dircity_EDP
+coord-latitude: 35.118604
+coord-longitude: 71.967455
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: DFCR001
+externalID: compas:DFCR001
+externalID: compasReporting:UD5C001
+
+dn: cn=FIZAGAT_EDP,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: FIZAGAT_EDP
+coord-latitude: 34.78889
+coord-longitude: 72.37361
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: FIZA002
+externalID: compas:FIZA002
+externalID: compasReporting:CGGU001
+
+dn: cn=RAWALPINDI_MILLS,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: RAWALPINDI_MILLS
+coord-latitude: 33.615603
+coord-longitude: 72.98926
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: R88X004
+description: Reporting to ISBX002
+externalID: compas:R88X004
+externalID: compasReporting:ISBX002
+
+dn: cn=QAYYUM_NAGAR_EDP,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: QAYYUM_NAGAR_EDP
+coord-latitude: 31.83488
+coord-longitude: 70.902895
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: DY9X002
+description: Reporting to DY9X001
+externalID: compas:DY9X002
+externalID: compasReporting:DY9X001
+
+dn: cn=WFP_WH_PIPRI,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: place
+objectClass: top
+cn: WFP_WH_PIPRI
+coord-latitude: 24.855901
+coord-longitude: 67.348455
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+compasId: KARX027
+description: Reporting to KARX001
+externalID: compas:KARX027
+externalID: compasReporting:KARX001
+
+dn: cn=WAHGA_NLC_WAREHOUSE,ou=places,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: place
+cn: WAHGA_NLC_WAREHOUSE
+coord-latitude: 31.603589
+coord-longitude: 74.57035
+type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+c: pk
+compasId: UIBA017
+coord-altitude: 1.0
+description: Reporting to LHOX001
+externalID: compasReporting:LHOX001
+locality: Locality
+postalCode: ZIP
+street: Street
+

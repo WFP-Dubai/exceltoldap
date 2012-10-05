@@ -1,0 +1,705 @@
+version: 1
+
+dn: ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: organizationalUnit
+objectClass: top
+ou: vehicles
+
+dn: cn=nreg03,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: nreg03
+description: NoSaCo Regular 03
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nreg04,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nreg04
+description: NoSaCo Regular 04
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nreg05,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nreg05
+description: NoSaCo Regular 05
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nreg06,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nreg06
+description: NoSaCo Regular 06
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nreg07,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nreg07
+description: NoSaCo Regular 07
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nreg08,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nreg08
+description: NoSaCo Regular 08
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nreg09,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nreg09
+description: NoSaCo Regular 09
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nreg10,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nreg10
+description: NoSaCo Regular 10
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nreg11,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nreg11
+description: NoSaCo Regular 11
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nreg12,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nreg12
+description: NoSaCo Regular 12
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nrap05,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nrap05
+description: NoSaCo Rapid 05
+type: cn=nosacorapid,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nrap06,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nrap06
+description: NoSaCo Rapid 06
+type: cn=nosacorapid,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nrap07,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: vehicle
+objectClass: top
+cn: nrap07
+description: NoSaCo Rapid 07
+type: cn=nosacorapid,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1658,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1658
+description: Toyota Land Cruiser/2009 (UN-67-1658)
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1660,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1660
+description: Toyota Land Cruiser/2009 (UN-67-1660)
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1369,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1369
+description: Toyota Land Cruiser/2002
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-45-57,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-45-57
+description: Toyota Land Cruiser/2008 (UN-45-57)
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-45-6,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-45-6
+description: Toyota Land Cruiser/2008 (UN-45-6)
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-45-58,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-45-58
+description: Toyota Land Cruiser/2008 (UN-45-58)
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-45-60,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-45-60
+description: Toyota Land Cruiser/2008 (UN-45-60)
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-45-39,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-45-39
+description: Toyota Land Cruiser/2008 (UN-45-39)
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-45-78,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-45-78
+description: Toyota Land Cruiser/2008 (UN-45-78)
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-45-36,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-45-36
+description: Toyota Land Cruiser/2008 (UN-45-36)
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-WKF,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-WKF
+description: Haiti Local Transport
+type: cn=helicopter,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1631,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1631
+description:: VG95b3RhIExhbmQgQ3J1aXNlci8yMDA4IChVTi02Ny0xNjMxKQ0KV0ZQCVBLCQ
+ 0KDQpTYXRhbWF0aWNzOiBEU1QyMTQ5N0QNCkdWTFAwNjQ0CQ0KDQpNb3RvVFJCTyBJRDogNTA2O
+ AkNClBGLSBNb2JpbGUgMzYyMQ0KMTEzNjIxDQoNClBha2lzdGFuIC0gSXNsYW1hYmFkCQkJ
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=Logan,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: Logan
+description: Hitec Mobile command center
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1678,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1678
+description:: NTA2Mw0KR1ZMUDEwNTgNCldGUAlQSw0KVG95b3RhIExhbmQgQ3J1aXNlci8yMD
+ A5DQpVTi02NyAtMTY3OA0KWWVzDQpNb3Rvcm9sYSBETTM2MDENClBGLU1vYmlsZSAzNjE2DQoxM
+ TM2MTY=
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1691,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1691
+description:: NTA2MQ0KV0ZQCVBLDQpUb3lvdGEgTGFuZCBDcnVpc2VyLzIwMDkNClVOLTY3IC
+ 0xNjkxDQpNb3Rvcm9sYSBETTM2MDENClBGLU1vYmlsZSAzNjMyDQoxMTM2MzI=
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1634,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1634
+description:: R1ZMUDA3OTINCldGUAlQSw0KVG95b3RhIExhbmQgQ3J1aXNlci8yMDA4
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1636,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1636
+description:: RFNUMzAxNzFCDQpHVkxQMDc5Mw0KV0ZQCVBLDQpUb3lvdGEgTGFuZCBDcnVpc2
+ VyLzIwMDg=
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1657,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1657
+description:: R1ZMUDA4OTcNCldGUAlQSw0KVG95b3RhIENvcm9sbGEgQ2FyLzIwMDkNClBha2
+ lzdGFuIC0gUGVzaGF3YXI=
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1692,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1692
+description:: RFNUOTNEMTQ4DQpXRlAJUEsNClRveW90YSBMYW5kIENydWlzZXIvMjAwOQ0KVU
+ 4tNjctMTY5Mg0KUGFraXN0YW4gLSBQZXNoYXdhcg==
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1694,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1694
+description:: V0ZQCVBLDQpUb3lvdGEgTGFuZCBDcnVpc2VyLzIwMDkNClBha2lzdGFuIC0gUG
+ VzaGF3YXI=
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1697,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1697
+description:: RFNUMDk1Qjg3DQpHVkxQMTE0Mg0KV0ZQCVBLDQpUb3lvdGEgQ29yb2xsYSBDYX
+ IvMjAxMA0KVU4tNjctMTY5Nw0KTm8NClBha2lzdGFuIC0gSXNsYW1hYmFk
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1699,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1699
+description:: RFNUNjcwN0YwDQpHVkxQMTE0NA0KV0ZQCVBLDQpUb3lvdGEgQ29yb2xsYSBDYX
+ IvMjAxMA0KVU4tNjctMTY5OQ0KTm8NClBha2lzdGFuIC0gUGVzaGF3YXI=
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1700,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1700
+description:: RFNUNjUxQjA4DQpHVkxQMTE0Mw0KV0ZQCVBLDQpUb3lvdGEgQ29yb2xsYSBDYX
+ IvMjAxMA0KVU4tNjctMTcwMA0KTm8NClBha2lzdGFuIC0gUGVzaGF3YXI=
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1701,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1701
+description:: RFNUQzExNEY0DQpHVkxQMTEzOQ0KV0ZQCVBLDQpUb3lvdGEgQ29yb2xsYSBDYX
+ IvMjAxMA0KVU4tNjctMTcwMQ0KTm8NClBha2lzdGFuIC0gSXNsYW1hYmFk
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1703,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1703
+description:: RFNUNkU2NkJGDQpHVkxQMTE0MA0KV0ZQCVBLDQpUb3lvdGEgQ29yb2xsYSBDYX
+ IvMjAxMA0KVU4tNjctMTcwMw0KTm8NClBha2lzdGFuIC0gSXNsYW1hYmFk
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=UN-67-1704,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1704
+description:: RFNUNjZBRjBCDQpHVkxQMTE0MQ0KV0ZQCVBLDQpUb3lvdGEgQ29yb2xsYSBDYX
+ IvMjAxMA0KVU4tNjctMTcwNA0KTm8NClBha2lzdGFuIC0gSXNsYW1hYmFk
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=EMS-DST270404,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: EMS-DST270404
+description:: V0ZQCUFFDQpUb3lvdGEgUHJhZG8=
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=EMS-DST2C59A1,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: EMS-DST2C59A1
+description:: V0ZQCUFFDQpOaXNzYW4gUGlja3VwDQpVTk8gMTA2LzA3DQooR1ZMUCk=
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=EMS-DST2CF0FC,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: EMS-DST2CF0FC
+description:: V0ZQCUFFDQpUb3lvdGEgQ0FNUlkNClVOTyAxMDYvMDENCihBZG1pbik=
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=EMS-DSTB3B956,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: EMS-DSTB3B956
+description:: V0ZQCUFFDQpUb3lvdGEgSGlhY2UgTWluaSBCdXMNCkkuTyAxMDU4DQooQWRtaW
+ 4p
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-WJF,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-WJF
+description: Plane 5Y-WJF
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=C-GRGK,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: C-GRGK
+description: Plane C-GRGK
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=Luismobile,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: Luismobile
+description:: Zm9yIEVQSUMgdGVzdGluZyBvbmx5DQp1c2VzIEx1aXMnIHBob25l
+type: cn=car,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=ZS-ATB,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: ZS-ATB
+description: Plane ZS-ATB
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-PRV,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-PRV
+description: Plane 5Y-PRV
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-MOC,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-MOC
+description: Plane 5Y-MOC
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-SGL,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-SGL
+description: Plane 5Y-SGL
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=C-GSAX,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: C-GSAX
+description: Plane C-GSAX
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-PTA,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-PTA
+description: Plane 5Y-PTA
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=ZS-SHJ,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: ZS-SHJ
+description: Plane ZS-SHJ
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=C-GHQO,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: C-GHQO
+description: Plane C-GHQO
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-NKV,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-NKV
+description: Plane 5Y-NKV
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-BXI,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-BXI
+description: Plane 5Y-BXI
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=ZS-PHG,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: ZS-PHG
+description: Plane ZS-PHG
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=C-FUCN,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: C-FUCN
+description: Plane C-FUCN
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=9H-AEW,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 9H-AEW
+description: Plane 9H-AEW
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-BVI,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-BVI
+description: Plane 5Y-BVI
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-STN,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-STN
+description: Plane 5Y-STN
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=ET-AMV,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: ET-AMV
+description: Plane ET-AMV
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=ZS-ATE,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: ZS-ATE
+description: Plane ZS-ATE
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-BVO,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-BVO
+description: Plane 5Y-BVO
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=FOJJC,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: FOJJC
+description: Plane FOJJC
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-OER,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-OER
+description: Plane 5Y-OER
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=LZ-CAV,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: LZ-CAV
+description: Plane LZ-CAV
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-ODS,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-ODS
+description: Plane 5Y-ODS
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-BVZ,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-BVZ
+description: Plane 5Y-BVZ
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-BXH,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-BXH
+description: Plane 5Y-BXH
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-BNH,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-BNH
+description: Plane 5Y-BNH
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=XA-FAS,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: XA-FAS
+description: Plane XA-FAS
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=ZS-EPV,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: ZS-EPV
+description: Plane ZS-EPV
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-ENA,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-ENA
+description: Plane 5Y-ENA
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=ZS-ATC,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: ZS-ATC
+description: Plane ZS-ATC
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=RA-25433,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: RA-25433
+description: Plane RA-25433
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=LZ-CAX,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: LZ-CAX
+description: Plane LZ-CAX
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=ZS-ATA,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: ZS-ATA
+description: Plane ZS-ATA
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=YL-HMN,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: YL-HMN
+description: Plane YL-HMN
+type: cn=airplane,ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
+
+dn: cn=ET-AOF,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: ET-AOF
+description: Plane ET-AOF
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=C-FPSA,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: C-FPSA
+description: Plane C-FPSA
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=ZS-OUE,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: ZS-OUE
+description: Plane ZS-OUE
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=YL-HMT,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: YL-HMT
+description: Plane YL-HMT
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=RA-27120,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: RA-27120
+description: Plane RA-27120
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=FOGXX,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: FOGXX
+description: Plane FOGXX
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=XA-ASF,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: XA-ASF
+description: Plane XA-ASF
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-BWG,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-BWG
+description: Plane 5Y-BWG
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=5Y-NLM,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: 5Y-NLM
+description: Plane 5Y-NLM
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=ZS-OKL,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: ZS-OKL
+description: Plane ZS-OKL
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=AFF-HB,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: AFF-HB
+description: Plane AFF-HB
+type: cn=airplane,ou=vehicleTypes,ou=resourcesType,dc=emergency,dc=lu
+
+dn: cn=nreg01,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: nreg01
+description: NoSaCo Regular 01
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
+
+dn: cn=nreg02,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: nreg02
+description: NoSaCo Regular 02
+type: cn=nosacoregular,ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
+
+dn: cn=nrap02,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: nrap02
+description: NoSaCo Rapid 02
+type: cn=nosacorapid,ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
+
+dn: cn=UN-67-1655,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: UN-67-1655
+description: Toyota Land Cruiser/2009 (UN-67-1655)
+type: cn=car,ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
+
+dn: cn=TestVehicle,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: TestVehicle
+description: This is a test vehicle
+type: cn=ship,ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
+communicationUri: VHFcallsign:112233
+licencePlate: 445VFE
+VIN: 1157896
+
+dn: cn=test_vehicle,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: test_vehicle
+description: test_vehicle
+type: cn=container,ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
+
+dn: cn=nrap01,ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+cn: nrap01
+description: NoSaCo Rapid 01
+type: cn=nosacorapid,ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
+
