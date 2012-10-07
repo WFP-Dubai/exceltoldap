@@ -19,53 +19,49 @@ def import_users(worksheet):
     curr_row = 1
     while curr_row < num_rows:
         curr_row += 1
-        username = worksheet.cell_value(curr_row,0)
-        personalTitle = worksheet.cell_value(curr_row,1)
-        firstName = worksheet.cell_value(curr_row,2)
-        lastName = worksheet.cell_value(curr_row,3)
-        eMail = worksheet.cell_value(curr_row,4)
-        additionalEmails = worksheet.cell_value(curr_row,5)
-        phoneNumbers = worksheet.cell_value(curr_row,6)
-        messaging = worksheet.cell_value(curr_row,7)
-        organization = worksheet.cell_value(curr_row,8)
-        department = worksheet.cell_value(curr_row,9)
-        street = worksheet.cell_value(curr_row,10)
-        zip = worksheet.cell_value(curr_row,11)
-        city = worksheet.cell_value(curr_row,12)
-        country = worksheet.cell_value(curr_row,13)
-        jobTitle = worksheet.cell_value(curr_row,14)
-        preferredLanguage = worksheet.cell_value(curr_row,15)
-        deviceID= worksheet.cell_value(curr_row,16)
-        
-        user,new = EpicUser.objects.get_or_create(username =  username)
-        user.personalTitle = personalTitle
-        user.firstName=firstName
-        user.lastName=lastName
-        user.eMail=eMail
-        user.additionalEmails=additionalEmails
-        user.phoneNumbers=phoneNumbers
-        user.messaging=messaging
-        user.organization=organization
-        user.department=department
-        user.street=street
-        user.zip=zip
-        user.city=city
-        user.country=country
-        user.jobTitle=jobTitle
-        user.preferredLanguage=preferredLanguage
-        user.save()
+        make_user(worksheet,curr_row)
     return True
 
+
 def import_places(worksheet):
-    #read sheet
-    #parse
-    
-    return a
+    num_rows = worksheet.nrows - 1
+    num_cells = worksheet.ncols - 1
+    curr_row = 1
+    while curr_row < num_rows:
+        curr_row += 1
+        make_user(worksheet,curr_row)
+
+    return True
     
     
 def import_vehicles(worksheet):
-    #read sheet
-    #parse
-    # save
+    num_rows = worksheet.nrows - 1
+    num_cells = worksheet.ncols - 1
+    curr_row = 1
+    while curr_row < num_rows:
+        curr_row += 1
+        make_user(worksheet,curr_row)
 
-    return a
+    return True
+
+
+def make_user(worksheet,row):
+#	deviceID= worksheet.cell_value(curr_row,16)	
+	item,new = EpicUser.objects.get_or_create(username =  worksheet.cell_value(curr_row,0))
+	item.personalTitle = worksheet.cell_value(curr_row,1)
+	item.firstName = worksheet.cell_value(curr_row,2)
+	item.lastName = worksheet.cell_value(curr_row,3)
+	item.eMail = worksheet.cell_value(curr_row,4)
+	item.additionalEmails = worksheet.cell_value(curr_row,5)
+	item.phoneNumbers = worksheet.cell_value(curr_row,6)
+	item.messaging = worksheet.cell_value(curr_row,7)
+	item.organization = worksheet.cell_value(curr_row,8)
+	item.department = worksheet.cell_value(curr_row,9)
+	item.street = worksheet.cell_value(curr_row,10)
+	item.zip = worksheet.cell_value(curr_row,11)
+	item.city = worksheet.cell_value(curr_row,12)
+	item.country = worksheet.cell_value(curr_row,13)
+	item.jobTitle =  worksheet.cell_value(curr_row,14)
+	item.preferredLanguage = worksheet.cell_value(curr_row,15)
+	item.save()
+

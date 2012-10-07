@@ -35,15 +35,19 @@ def list(request):
         {'documents': documents, 'form': form},
         context_instance=RequestContext(request)
     )
-    
+
+
 def users(request):
     pass
     
+
 def vehicles(request):
     pass
     
+
 def places(request):
     pass
+
 
 def all_items(request):
     pass
