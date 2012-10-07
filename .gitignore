@@ -1,3 +1,8 @@
 *.pyc
 *.db
 .DS_Store
+
+documents/*
+*.db
+
+database.db

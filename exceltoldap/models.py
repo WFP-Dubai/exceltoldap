@@ -1,10 +1,9 @@
 #LDAP Interface
 from django.db import models
 
-from django.db import models
-
 class Document(models.Model):
     docfile = models.FileField(upload_to='documents/%Y/%m/%d')
+
 
 class EpicDevice( models.Model):
     deviceUid = models.CharField(max_length = 20, primary_key=True)
@@ -29,7 +28,7 @@ class EpicUser( models.Model):
     country = models.CharField(blank=True, null=True, max_length = 20)
     jobTitle = models.CharField(blank=True, null=True, max_length = 20)
     preferredLanguage = models.CharField(blank=True, null=True, max_length = 20)
-    deviceID = models.ForeignKey(EpicDevice)
+    deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
 
 
 class EpicVehicle( models.Model):
