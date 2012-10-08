@@ -29,7 +29,7 @@ def import_places(worksheet):
     curr_row = 1
     while curr_row < num_rows:
         curr_row += 1
-        make_user(worksheet,curr_row)
+        make_place(worksheet,curr_row)
 
     return True
     
@@ -40,12 +40,11 @@ def import_vehicles(worksheet):
     curr_row = 1
     while curr_row < num_rows:
         curr_row += 1
-        make_user(worksheet,curr_row)
-
+        make_vehicle(worksheet,curr_row)
     return True
 
 
-def make_user(worksheet,row):
+def make_user(worksheet,curr_row):
 #	deviceID= worksheet.cell_value(curr_row,16)	
 	item,new = EpicUser.objects.get_or_create(username =  worksheet.cell_value(curr_row,0))
 	item.personalTitle = worksheet.cell_value(curr_row,1)
@@ -65,3 +64,30 @@ def make_user(worksheet,row):
 	item.preferredLanguage = worksheet.cell_value(curr_row,15)
 	item.save()
 
+def make_place(worksheet,curr_row):
+	item,new = EpicPlace.objects.get_or_create(placeID =  worksheet.cell_value(curr_row,0))
+	item.compasID = worksheet.cell_value(curr_row,1)
+	item.description = worksheet.cell_value(curr_row,2)
+	item.type = worksheet.cell_value(curr_row,3)
+	item.organization = worksheet.cell_value(curr_row,4)
+	item.department = worksheet.cell_value(curr_row,5)
+	item.street = worksheet.cell_value(curr_row,6)
+	item.zip = worksheet.cell_value(curr_row,7)
+	item.city = worksheet.cell_value(curr_row,8)
+	item.country = worksheet.cell_value(curr_row,9)
+	item.eMail = worksheet.cell_value(curr_row,10)
+	item.phoneNumbers = worksheet.cell_value(curr_row,11)
+	item.messaging = worksheet.cell_value(curr_row,12)
+	item.altitude = worksheet.cell_value(curr_row,13)
+	item.latitude =  worksheet.cell_value(curr_row,14)
+	item.longitude = worksheet.cell_value(curr_row,15)
+	item.save()
+	
+make_vehicle(worksheet,curr_row):
+	item,new = EpicVehicle.objects.get_or_create(vehicleID =  worksheet.cell_value(curr_row,0))
+	item.description = worksheet.cell_value(curr_row,1)
+	item.type = worksheet.cell_value(curr_row,2)
+	item.messaging = worksheet.cell_value(curr_row,3)
+	item.licensePlate = worksheet.cell_value(curr_row,4)
+	item.VIN = worksheet.cell_value(curr_row,5)
+	item.save()

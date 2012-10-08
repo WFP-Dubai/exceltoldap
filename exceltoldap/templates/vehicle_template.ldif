@@ -1,0 +1,18 @@
+version: 1
+
+dn: ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: organizationalUnit
+objectClass: top
+ou: vehicles
+
+#loop
+
+dn: cn={{vehicle.ID}},ou=vehicles,ou=resources,dc=emergency,dc=lu
+objectClass: top
+objectClass: vehicle
+type: cn=car,ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
+cn: {{vehicle.ID}}
+description: {{vehicle.description}}
+communicationUri: VHFcallsign:112233
+licencePlate: {{vehicle.licencePlate}}
+VIN: {{vehicle.VIN}}

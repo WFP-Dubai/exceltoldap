@@ -39,7 +39,6 @@ def list(request):
 
 def users(request):
     pass
-    
 
 def vehicles(request):
     pass
