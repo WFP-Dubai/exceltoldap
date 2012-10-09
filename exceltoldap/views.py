@@ -38,16 +38,33 @@ def list(request):
 
 
 def users(request):
-    pass
+    users = EpicUser.objects.all()
+    return render_to_response(
+        'user_template.ldif',
+        {'users': users},
+        context_instance=RequestContext(request)
+    )
 
 def vehicles(request):
-    pass
+    return render_to_response(
+        'list.html',
+        {'documents': documents, 'form': form},
+        context_instance=RequestContext(request)
+    )
     
 
 def places(request):
-    pass
+    return render_to_response(
+        'list.html',
+        {'documents': documents, 'form': form},
+        context_instance=RequestContext(request)
+    )
 
 
 def all_items(request):
-    pass
+    return render_to_response(
+        'list.html',
+        {'documents': documents, 'form': form},
+        context_instance=RequestContext(request)
+    )
     

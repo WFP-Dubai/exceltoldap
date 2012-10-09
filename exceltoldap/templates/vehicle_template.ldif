@@ -5,14 +5,17 @@ objectClass: organizationalUnit
 objectClass: top
 ou: vehicles
 
-#loop
 
+{% for vehicle in vehicles%}
 dn: cn={{vehicle.ID}},ou=vehicles,ou=resources,dc=emergency,dc=lu
 objectClass: top
 objectClass: vehicle
 type: cn=car,ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
 cn: {{vehicle.ID}}
 description: {{vehicle.description}}
-communicationUri: VHFcallsign:112233
+communicationUri: {{vehicle.messaging}}
 licencePlate: {{vehicle.licencePlate}}
 VIN: {{vehicle.VIN}}
+
+
+{% endfor %}

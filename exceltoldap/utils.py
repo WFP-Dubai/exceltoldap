@@ -10,6 +10,10 @@ def parse_excel(file):
     # Call import users
     users = workbook.sheet_by_name('Users')
     import_users(users)
+    places = workbook.sheet_by_name('Places')
+    import_places(places)
+    vehicles = workbook.sheet_by_name(u'Vehicles')
+    import_vehicles(vehicles)
     return True
     
 
@@ -83,7 +87,7 @@ def make_place(worksheet,curr_row):
 	item.longitude = worksheet.cell_value(curr_row,15)
 	item.save()
 	
-make_vehicle(worksheet,curr_row):
+def make_vehicle(worksheet,curr_row):
 	item,new = EpicVehicle.objects.get_or_create(vehicleID =  worksheet.cell_value(curr_row,0))
 	item.description = worksheet.cell_value(curr_row,1)
 	item.type = worksheet.cell_value(curr_row,2)

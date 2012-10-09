@@ -5,17 +5,17 @@ objectClass: top
 objectClass: organizationalUnit
 ou: places
 
+{%for place in places%}
 dn: cn= {{place.placeID}} ,ou=places,ou=resources,dc=emergency,dc=lu
 objectClass: place
 objectClass: top
 cn: {{place.placeID}}
 coord-latitude: {{place.longitude}}
 coord-longitude: {{place.latitude}}
-? Altitude: {{place.altitude}}
+coord-altitude: {{place.altitude}}
 compasId: {{place.compasID}}
-#Description
-externalID: compas:LHOX011
-externalID: compasReporting:LHOX009
-type: cn=warehouse,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
-type: cn=office,ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
+description: {{place.description}}
+type: cn={{place.type}},ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
 
+
+{%endfor%}

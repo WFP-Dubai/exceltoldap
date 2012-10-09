@@ -38,7 +38,7 @@ class EpicVehicle( models.Model):
     messaging = models.CharField(blank=True, null=True, max_length = 20)
     licensePlate = models.CharField(blank=True, null=True, max_length = 20)
     VIN = models.CharField(blank=True, null=True, max_length = 20)
-    deviceID = models.ForeignKey(EpicDevice,blank=True, null=True))
+    deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
 
 
 class EpicPlace( models.Model):
@@ -58,4 +58,4 @@ class EpicPlace( models.Model):
     altitude = models.FloatField( null = True, db_column = 'Altitude', blank = True)
     latitude = models.FloatField( db_column = 'Latitude' , blank = True)
     longitude = models.FloatField( db_column = 'Longitude', blank = True)
-    deviceID = models.ForeignKey(EpicDevice,blank=True, null=True))
+    deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)

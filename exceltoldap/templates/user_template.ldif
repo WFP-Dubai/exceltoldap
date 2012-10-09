@@ -6,6 +6,7 @@ objectClass: top
 ou: users
 
 
+{% for user in users%}
 dn: uid={{user.username}},ou=users,ou=people,dc=emergency,dc=lu
 objectClass: mwperson
 objectClass: inetOrgPerson
@@ -25,15 +26,7 @@ postalCode: {{user.zip}}
 preferredLanguage: {{user.Preferred}}
 street: {{user.street}}
 uid: {{user.username}}
-#loop Messaging
-communicationUri: VHFcallsign:5678912
-communicationUri: skype:eric.skype?chat
-communicationUri: sip:eric.kiruhura@wfp.org
-communicationUri: msnim:chat?contact=eric@hotmail.com
-communicationUri: gtalk:chat?jid=eric@gmail.com
-#loop Telephone
-telephoneNumber: Foodsat: 1349-2812
-telephoneNumber: WAVE: 1349 9012
-telephoneNumber: Thuraya: +882 162 111-2208
-telephoneNumber: Mobile: +971 55 3609384
+communicationUri:{{user.messaging}}
+telephoneNumber:{{user.phoneNumbers}}
 
+{% endfor %}
