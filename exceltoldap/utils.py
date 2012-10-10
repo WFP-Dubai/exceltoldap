@@ -6,6 +6,7 @@ def parse_excel(file):
     # read file
     # Check file correct file
     # open Excel
+    
     workbook = xlrd.open_workbook(file.docfile.name)
     
     # Call import users
@@ -26,6 +27,9 @@ def import_users(worksheet):
     num_rows = worksheet.nrows - 1
     num_cells = worksheet.ncols - 1
     curr_row = 1
+    users = EpicUser.objects.all()
+    for user in users:
+        user.delete()
     while curr_row < num_rows:
         curr_row += 1
         make_user(worksheet,curr_row)
@@ -36,6 +40,9 @@ def import_places(worksheet):
     num_rows = worksheet.nrows - 1
     num_cells = worksheet.ncols - 1
     curr_row = 1
+    items = EpicPlace.objects.all()
+    for item in items:
+        item.delete()
     while curr_row < num_rows:
         curr_row += 1
         make_place(worksheet,curr_row)
@@ -47,6 +54,10 @@ def import_vehicles(worksheet):
     num_rows = worksheet.nrows - 1
     num_cells = worksheet.ncols - 1
     curr_row = 1
+    items = EpicPlace.objects.all()
+    for item in items:
+        item.delete()
+
     while curr_row < num_rows:
         curr_row += 1
         make_vehicle(worksheet,curr_row)

@@ -18,12 +18,12 @@ objectClass: organizationalPerson
 c: {{user.country}}
 cn: {{user.firstName}}
 sn: {{user.lastName}}
-mail: {{user.email}}eric.kiruhura@wfp.org
+mail: {{user.eMail}}{%if user.additionalEmails%}|{{user.additionalEmails}}{%endif%}
 o: {{user.organization}}
 ou: {{user.department}}
 personalTitle: {{user.personalTitle}}
 postalCode: {{user.zip}}
-preferredLanguage: {{user.Preferred}}
+preferredLanguage: {{user.preferredLanguage}}
 street: {{user.street}}
 uid: {{user.username}}
 communicationUri:{{user.messaging}}

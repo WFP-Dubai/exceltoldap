@@ -16,12 +16,16 @@ def home(request):
 
 def list(request):
     # Handle file upload
+    
     if request.method == 'POST':
         form = DocumentForm(request.POST, request.FILES)
         if form.is_valid():
             newdoc = Document(docfile = request.FILES['docfile'])
             newdoc.save()
-            parse_excel(newdoc)
+            try:
+                parse_excel(newdoc)
+            except:
+                pass
             # Redirect to the document list after POST
             return HttpResponseRedirect(reverse('exceltoldap.views.list'))
     else:
