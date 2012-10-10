@@ -3,13 +3,16 @@ from django.db import models
 
 class Document(models.Model):
     docfile = models.FileField(upload_to='documents/%Y/%m/%d')
+    uploaded = models.DateTimeField(auto_now_add=True)
+    imported = models.DateTimeField(blank=True, null=True)
 
 
 class EpicDevice( models.Model):
     deviceUid = models.CharField(max_length = 20, primary_key=True)
     Description = models.CharField(blank=True, null=True, max_length = 20)
     Capabilities = models.CharField(blank=True, null=True, max_length = 20)
-
+    added = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
 
 class EpicUser( models.Model):
     username = models.CharField(primary_key=True, max_length = 20)
@@ -29,7 +32,8 @@ class EpicUser( models.Model):
     jobTitle = models.CharField(blank=True, null=True, max_length = 20)
     preferredLanguage = models.CharField(blank=True, null=True, max_length = 20)
     deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
-
+    added = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
 
 class EpicVehicle( models.Model):
     vehicleID = models.CharField(primary_key=True,max_length = 20)
@@ -39,7 +43,8 @@ class EpicVehicle( models.Model):
     licensePlate = models.CharField(blank=True, null=True, max_length = 20)
     VIN = models.CharField(blank=True, null=True, max_length = 20)
     deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
-
+    added = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
 
 class EpicPlace( models.Model):
     placeID = models.CharField(primary_key=True,max_length = 20)
@@ -59,3 +64,5 @@ class EpicPlace( models.Model):
     latitude = models.FloatField( db_column = 'Latitude' , blank = True)
     longitude = models.FloatField( db_column = 'Longitude', blank = True)
     deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
+    added = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)

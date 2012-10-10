@@ -21,7 +21,7 @@ def list(request):
         if form.is_valid():
             newdoc = Document(docfile = request.FILES['docfile'])
             newdoc.save()
-            #parse_excel(newdoc)
+            parse_excel(newdoc)
             # Redirect to the document list after POST
             return HttpResponseRedirect(reverse('exceltoldap.views.list'))
     else:
@@ -42,22 +42,27 @@ def users(request):
     return render_to_response(
         'user_template.ldif',
         {'users': users},
-        context_instance=RequestContext(request)
+        context_instance=RequestContext(request),
+        mimetype="text/text"
     )
 
 def vehicles(request):
+    vehicles = EpicVehicle.objects.all()
     return render_to_response(
-        'list.html',
-        {'documents': documents, 'form': form},
-        context_instance=RequestContext(request)
+        'vehicle_template.ldif',
+        {'vehicles': vehicles},
+        context_instance=RequestContext(request),
+        mimetype="text/text"
     )
     
 
 def places(request):
+    places = EpicPlace.objects.all()
     return render_to_response(
-        'list.html',
-        {'documents': documents, 'form': form},
-        context_instance=RequestContext(request)
+        'place_template.ldif',
+        {'places': places},
+        context_instance=RequestContext(request),
+        mimetype="text/text"
     )
 
 
@@ -65,6 +70,7 @@ def all_items(request):
     return render_to_response(
         'list.html',
         {'documents': documents, 'form': form},
-        context_instance=RequestContext(request)
+        context_instance=RequestContext(request),
+        mimetype="text/text"
     )
     

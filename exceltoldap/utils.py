@@ -1,4 +1,5 @@
 from exceltoldap.models import *
+import datetime
 import xlrd
 
 def parse_excel(file):
@@ -14,6 +15,10 @@ def parse_excel(file):
     import_places(places)
     vehicles = workbook.sheet_by_name(u'Vehicles')
     import_vehicles(vehicles)
+    
+    # update docfile
+    file.imported = datetime.datetime.now()
+    file.save()
     return True
     
 
