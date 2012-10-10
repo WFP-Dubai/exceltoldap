@@ -66,11 +66,14 @@ def places(request):
     )
 
 
+
 def all_items(request):
+    places = EpicPlace.objects.all()
+    vehicles = EpicVehicle.objects.all()
+    users = EpicUser.objects.all()        
     return render_to_response(
-        'list.html',
-        {'documents': documents, 'form': form},
+        'full.ldif',
+        {'places': places,'vehicles': vehicles,'users': users},
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
-    

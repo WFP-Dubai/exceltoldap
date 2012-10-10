@@ -1,0 +1,7 @@
+{% include 'user_template.ldif' %}
+
+
+{% include 'vehicle_template.ldif' %}
+
+
+{% include 'place_template.ldif' %}
