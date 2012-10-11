@@ -54,7 +54,7 @@ def import_vehicles(worksheet):
     num_rows = worksheet.nrows - 1
     num_cells = worksheet.ncols - 1
     curr_row = 1
-    items = EpicPlace.objects.all()
+    items = EpicVehicle.objects.all()
     for item in items:
         item.delete()
 

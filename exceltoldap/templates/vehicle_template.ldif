@@ -7,15 +7,15 @@ ou: vehicles
 
 
 {% for vehicle in vehicles%}
-dn: cn={{vehicle.ID}},ou=vehicles,ou=resources,dc=emergency,dc=lu
+dn: cn={{vehicle.vehicleID}},ou=vehicles,ou=resources,dc=emergency,dc=lu
 objectClass: top
 objectClass: vehicle
-type: cn=car,ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
-cn: {{vehicle.ID}}
-description: {{vehicle.description}}
-communicationUri: {{vehicle.messaging}}
-licencePlate: {{vehicle.licencePlate}}
-VIN: {{vehicle.VIN}}
+type: cn={{vehicle.type}},ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
+cn: {{vehicle.vehicleID}}{% if vehicle.description%}
+description: {{vehicle.description}}{%endif%}{%if vehicle.messaging%}
+communicationUri: {{vehicle.messaging}}{%endif%}{%if vehicle.licensePlate%}
+licencePlate: {{vehicle.licensePlate}}{%endif%}{%if vehicle.VIN%}
+VIN: {{vehicle.VIN}}{%endif%}
 
 
 {% endfor %}
