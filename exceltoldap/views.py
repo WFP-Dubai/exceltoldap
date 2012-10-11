@@ -43,31 +43,37 @@ def list(request):
 
 def users(request):
     users = EpicUser.objects.all()
-    return render_to_response(
+    response = render_to_response(
         'user_template.ldif',
         {'users': users},
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
+    response['Content-Disposition'] = 'attachment; filename="users.ldif"'
+    return response
 
 def vehicles(request):
     vehicles = EpicVehicle.objects.all()
-    return render_to_response(
+    response = render_to_response(
         'vehicle_template.ldif',
         {'vehicles': vehicles},
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
+    response['Content-Disposition'] = 'attachment; filename="vehicles.ldif"'
+    return response
     
 
 def places(request):
     places = EpicPlace.objects.all()
-    return render_to_response(
+    response = render_to_response(
         'place_template.ldif',
         {'places': places},
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
+    response['Content-Disposition'] = 'attachment; filename="places.ldif"'
+    return response
 
 
 
@@ -75,9 +81,11 @@ def all_items(request):
     places = EpicPlace.objects.all()
     vehicles = EpicVehicle.objects.all()
     users = EpicUser.objects.all()        
-    return render_to_response(
+    response = render_to_response(
         'full.ldif',
         {'places': places,'vehicles': vehicles,'users': users},
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
+    response['Content-Disposition'] = 'attachment; filename="all.ldif"'
+    return response

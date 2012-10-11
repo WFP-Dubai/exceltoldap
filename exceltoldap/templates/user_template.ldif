@@ -14,19 +14,20 @@ objectClass: person
 objectClass: country
 objectClass: top
 objectClass: simpleSecurityObject
-objectClass: organizationalPerson
-c: {{user.country}}
-cn: {{user.firstName}}
-sn: {{user.lastName}}
-mail: {{user.eMail}}{%if user.additionalEmails%}|{{user.additionalEmails}}{%endif%}
-o: {{user.organization}}
-ou: {{user.department}}
-personalTitle: {{user.personalTitle}}
-postalCode: {{user.zip}}
-preferredLanguage: {{user.preferredLanguage}}
-street: {{user.street}}
-uid: {{user.username}}
-communicationUri:{{user.messaging}}
-telephoneNumber:{{user.phoneNumbers}}
+objectClass: organizationalPerson{%if user.country%}
+c: {{user.country}}{%endif%}{%if user.firstName%}
+cn: {{user.firstName}}{%endif%}{%if user.lastName%}
+sn: {{user.lastName}}{%endif%}{%if user.eMail%}
+mail: {{user.eMail}}{%if user.additionalEmails%}|{{user.additionalEmails}}{%endif%}{%endif%}{%if user.organization%}
+o: {{user.organization}}{%endif%}{%if user.department%}
+ou: {{user.department}}{%endif%}{%if user.personalTitle%}
+personalTitle: {{user.personalTitle}}{%endif%}{%if user.zip%}
+postalCode: {{user.zip}}{%endif%}{%if user.preferredLanguage%}
+preferredLanguage: {{user.preferredLanguage}}{%endif%}{%if user.street%}
+street: {{user.street}}{%endif%}{%if user.username%}
+uid: {{user.username}}{%endif%}{%if user.messaging%}
+communicationUri:{{user.messaging}}{%endif%}{%if user.phoneNumbers%}
+telephoneNumber:{{user.phoneNumbers}}{%endif%}
+
 
 {% endfor %}
