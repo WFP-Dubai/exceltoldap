@@ -10,8 +10,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'exceltoldap.views.home', name='home'),
-    url(r'^list/$', 'exceltoldap.views.list', name='list'),
+    url(r'^/$', 'exceltoldap.views.list', name='list'),
     url(r'^users/$','exceltoldap.views.users', name='users'),
     url(r'^vehicles/$','exceltoldap.views.vehicles', name='vehicles'),
     url(r'^places/$','exceltoldap.views.places', name='places'),

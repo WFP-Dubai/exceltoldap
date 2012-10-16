@@ -9,11 +9,6 @@ from exceltoldap.models import Document
 from exceltoldap.forms import DocumentForm
 from exceltoldap.utils import *
 
-def home(request):
-    template = "home.html"
-    return direct_to_template(request, template)
-
-
 def list(request):
     # Handle file upload
     
