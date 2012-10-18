@@ -1,6 +1,6 @@
 *.pyc
 *.db
 .DS_Store
-documents/*
+documents/20*
 *.db
 database.db
