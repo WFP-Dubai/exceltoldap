@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 
-from django.conf.urls.defaults import patterns, include, url
+#from django.conf.urls.defaults import patterns, include, url
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -10,7 +10,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^/$', 'exceltoldap.views.list', name='list'),
+    url(r'^$', 'exceltoldap.views.list', name='list'),
     url(r'^users/$','exceltoldap.views.users', name='users'),
     url(r'^vehicles/$','exceltoldap.views.vehicles', name='vehicles'),
     url(r'^places/$','exceltoldap.views.places', name='places'),
