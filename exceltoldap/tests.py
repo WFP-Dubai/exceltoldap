@@ -9,6 +9,6 @@ class ExcelViewTestCase(TestCase):
     def test_vheicles(self):
         resp = self.client.get('/vehicles/')
         self.assertEqual(resp.status_code, 200)
-        self.assertTrue('vehiclesx' in resp.context)
+        self.assertTrue('vehicles' in resp.context)
         
         
