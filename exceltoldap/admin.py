@@ -1,5 +1,5 @@
 from django.contrib import admin
-from exceltoldap.models import *
+from models import EpicDevice, EpicUser,EpicVehicle,EpicPlace
 admin.site.register(EpicDevice)
 admin.site.register(EpicUser)
 admin.site.register(EpicVehicle)

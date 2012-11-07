@@ -2,12 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Excel File Upload</title>   
+        <title>Excel File Upload Tool</title>   
     </head>
     <body>
 
 	<!-- Upload form. Note enctype attribute! -->
-	<form action="{% url list %}" method="post" enctype="multipart/form-data">
+	<form action="{% url list_documents %}" method="post" enctype="multipart/form-data">
 	    {% csrf_token %}
 	    <p>{{ form.non_field_errors }}</p>
 	    <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
@@ -25,7 +25,6 @@
 		<br/>
 		<a href="../all/">Export all of the above</a>
 		<hr/>
-		<a href="..">Back to start page</a>
 	</div>
 
     </body>

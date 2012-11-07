@@ -1,16 +1,12 @@
-from models import *
-#from django.views.generic.simple import direct_to_template
-from django.views.generic.base import TemplateView
-import xlrd
+from models import Document,EpicUser,EpicPlace,EpicVehicle
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
-from exceltoldap.models import Document
-from exceltoldap.forms import DocumentForm
-from exceltoldap.utils import *
+from forms import DocumentForm
+from utils import parse_excel
 
-def list(request):
+def list_documents(request):
     # Handle file upload
     
     if request.method == 'POST':
@@ -22,16 +18,16 @@ def list(request):
                 parse_excel(newdoc)
             except:
                 pass
-            # Redirect to the document list after POST
-            return HttpResponseRedirect(reverse('exceltoldap.views.list'))
+            # Redirect to the document list after POST 
+            return HttpResponseRedirect(reverse('exceltoldap.views.list_documents'))
     else:
         form = DocumentForm() # A empty, unbound form
 
-    # Load documents for the list page
+    # Load documents for the list_documents page
     documents = Document.objects.all()
-    # Render list page with the documents and the form
+    # Render list_documents page with the documents and the form
     return render_to_response(
-        'list.html',
+        'list_documents.html',
         {'documents': documents, 'form': form},
         context_instance=RequestContext(request)
     )

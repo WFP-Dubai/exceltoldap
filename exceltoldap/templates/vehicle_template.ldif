@@ -17,5 +17,4 @@ communicationUri: {{vehicle.messaging}}{%endif%}{%if vehicle.licensePlate%}
 licencePlate: {{vehicle.licensePlate}}{%endif%}{%if vehicle.VIN%}
 VIN: {{vehicle.VIN}}{%endif%}
 
-
 {% endfor %}

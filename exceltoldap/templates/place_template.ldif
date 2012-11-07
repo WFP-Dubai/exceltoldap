@@ -11,11 +11,14 @@ objectClass: place
 objectClass: top
 cn: {{place.placeID}}
 coord-latitude: {{place.longitude}}
-coord-longitude: {{place.latitude}}
-coord-altitude: {{place.altitude}}
+coord-longitude: {{place.latitude}}{%if place.altitude%}
+coord-altitude: {{place.altitude}}{%endif%}{%if place.compasID%}
 compasId: {{place.compasID}}
+externalID: compasReporting:{{place.compasID}}{%endif%}
 description: {{place.description}}
 type: cn={{place.type}},ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
-
+l: {{place.city}}
+postalCode: {{place.zip}}
+street: {{place.street}}
 
 {%endfor%}

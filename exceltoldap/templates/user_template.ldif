@@ -29,5 +29,4 @@ uid: {{user.username}}{%endif%}{%if user.messaging%}
 communicationUri:{{user.messaging}}{%endif%}{%if user.phoneNumbers%}
 telephoneNumber:{{user.phoneNumbers}}{%endif%}
 
-
 {% endfor %}
