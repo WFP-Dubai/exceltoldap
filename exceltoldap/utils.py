@@ -1,4 +1,4 @@
-from models import EpicUser, EpicPlace, EpicVehicle
+from models import EpicUser, EpicPlace, EpicVehicle,EpicDevice
 import datetime
 import xlrd
 
@@ -10,10 +10,10 @@ def parse_excel(uploaded_file):
     workbook = xlrd.open_workbook(uploaded_file.docfile.name)
     
     # Call import users
-    users = workbook.sheet_by_name('Users')
-    import_users(users)
-    places = workbook.sheet_by_name('Places')
-    import_places(places)
+    #users = workbook.sheet_by_name('Users')
+    #import_users(users)
+    #places = workbook.sheet_by_name('Places')
+    #import_places(places)
     vehicles = workbook.sheet_by_name(u'Vehicles')
     import_vehicles(vehicles)
     
@@ -79,6 +79,10 @@ def make_user(worksheet,curr_row):
     item.country = worksheet.cell_value(curr_row,13)
     item.jobTitle =  worksheet.cell_value(curr_row,14)
     item.preferredLanguage = worksheet.cell_value(curr_row,15)
+    d_id = worksheet.cell_value(curr_row,16)
+    if d_id:
+        device, new = EpicDevice.objects.get_or_create(deviceUid=d_id,Description="Radio For "+item.username,Capabilities="gps")
+        item.deviceID =  device
     item.save()
     if new:
         pass
@@ -101,6 +105,10 @@ def make_place(worksheet,curr_row):
     item.altitude = worksheet.cell_value(curr_row,13)
     item.latitude =  worksheet.cell_value(curr_row,14)
     item.longitude = worksheet.cell_value(curr_row,15)
+    d_id = worksheet.cell_value(curr_row,16)
+    if d_id:
+        device, new = EpicDevice.objects.get_or_create(deviceUid=d_id,Description="Radio For "+item.vehicleID,Capabilities="gps")
+        item.deviceID =  device
     item.save()
     if new:
         pass
@@ -112,6 +120,11 @@ def make_vehicle(worksheet,curr_row):
     item.messaging = worksheet.cell_value(curr_row,3)
     item.licensePlate = worksheet.cell_value(curr_row,4)
     item.VIN = worksheet.cell_value(curr_row,5)
+    #make or link device
+    d_id = worksheet.cell_value(curr_row,6)
+    if d_id:
+        device, new = EpicDevice.objects.get_or_create(deviceUid=d_id,Description="Radio For "+item.vehicleID,Capabilities="gps")
+        item.deviceID =  device
     item.save()
     if new:
         pass

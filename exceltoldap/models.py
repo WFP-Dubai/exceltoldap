@@ -9,14 +9,14 @@ class Document(models.Model):
 
 class EpicDevice( models.Model):
     deviceUid = models.CharField(max_length = 50, primary_key=True)
-    Description = models.CharField(blank=True, null=True, max_length = 20)
+    Description = models.CharField(blank=True, null=True, max_length = 200)
     Capabilities = models.CharField(blank=True, null=True, max_length = 20)
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
 class EpicUser( models.Model):
     username = models.CharField(primary_key=True, max_length = 50)
-    personalTitle = models.CharField(blank=True, null=True, max_length = 20)
+    personalTitle = models.CharField(blank=True, null=True, max_length = 50)
     firstName = models.CharField(blank=True, null=True, max_length = 50)
     lastName = models.CharField(blank=True, null=True, max_length = 50)
     eMail = models.CharField(blank=True, null=True, max_length = 100)
@@ -26,11 +26,11 @@ class EpicUser( models.Model):
     organization = models.CharField(blank=True, null=True, max_length = 50)
     department = models.CharField(blank=True, null=True, max_length = 50)
     street = models.CharField(blank=True, null=True, max_length = 50)
-    zip = models.CharField(blank=True, null=True, max_length = 20)
+    zip = models.CharField(blank=True, null=True, max_length = 50)
     city = models.CharField(blank=True, null=True, max_length = 50)
     country = models.CharField(blank=True, null=True, max_length = 50)
     jobTitle = models.CharField(blank=True, null=True, max_length = 50)
-    preferredLanguage = models.CharField(blank=True, null=True, max_length = 20)
+    preferredLanguage = models.CharField(blank=True, null=True, max_length = 50)
     deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)

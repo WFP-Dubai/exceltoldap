@@ -1,4 +1,4 @@
-from models import Document,EpicUser,EpicPlace,EpicVehicle
+from models import Document,EpicUser,EpicPlace,EpicVehicle,EpicDevice
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.http import HttpResponseRedirect
@@ -14,10 +14,10 @@ def list_documents(request):
         if form.is_valid():
             newdoc = Document(docfile = request.FILES['docfile'])
             newdoc.save()
-            try:
-                parse_excel(newdoc)
-            except:
-                pass
+            #try:
+            parse_excel(newdoc)
+            #except:
+            print "FXCK"
             # Redirect to the document list after POST 
             return HttpResponseRedirect(reverse('exceltoldap.views.list_documents'))
     else:
@@ -52,7 +52,7 @@ def vehicles(request):
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
-    response['Content-Disposition'] = 'attachment; filename="vehicles.ldif"'
+    #response['Content-Disposition'] = 'attachment; filename="vehicles.ldif"'
     return response
     
 
