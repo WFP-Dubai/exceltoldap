@@ -32,6 +32,8 @@ class EpicUser( models.Model):
     jobTitle = models.CharField(blank=True, null=True, max_length = 50)
     preferredLanguage = models.CharField(blank=True, null=True, max_length = 50)
     deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
+    foodsat = models.CharField(max_length=20, blank=True, null=True, help_text="")
+    vhfCallsign = models.CharField(max_length=10, blank=True, null=True, help_text="")
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 

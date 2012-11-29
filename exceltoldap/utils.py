@@ -9,11 +9,11 @@ def parse_excel(uploaded_file):
     
     workbook = xlrd.open_workbook(uploaded_file.docfile.name)
     
-    # Call import users
-    #users = workbook.sheet_by_name('Users')
-    #import_users(users)
-    #places = workbook.sheet_by_name('Places')
-    #import_places(places)
+    #Call import users
+    users = workbook.sheet_by_name('Users')
+    import_users(users)
+    places = workbook.sheet_by_name('Places')
+    import_places(places)
     vehicles = workbook.sheet_by_name(u'Vehicles')
     import_vehicles(vehicles)
     
@@ -31,7 +31,10 @@ def import_users(worksheet):
         user.delete()
     while curr_row < num_rows:
         curr_row += 1
-        make_user(worksheet,curr_row)
+        try:
+            make_user(worksheet,curr_row)
+        except:
+            pass
     return True
 
 
@@ -40,10 +43,16 @@ def import_places(worksheet):
     curr_row = 1
     items = EpicPlace.objects.all()
     for item in items:
-        item.delete()
+        try:
+            item.delete()
+        except:
+            pass
     while curr_row < num_rows:
         curr_row += 1
-        make_place(worksheet,curr_row)
+        try:
+            make_place(worksheet,curr_row)
+        except:
+            pass
 
     return True
     
@@ -62,33 +71,32 @@ def import_vehicles(worksheet):
 
 
 def make_user(worksheet,curr_row):
-#    deviceID= worksheet.cell_value(curr_row,16)    
-    item,new = EpicUser.objects.get_or_create(username =  worksheet.cell_value(curr_row,0))
-    item.personalTitle = worksheet.cell_value(curr_row,1)
-    item.firstName = worksheet.cell_value(curr_row,2)
-    item.lastName = worksheet.cell_value(curr_row,3)
-    item.eMail = worksheet.cell_value(curr_row,4)
-    item.additionalEmails = worksheet.cell_value(curr_row,5)
-    item.phoneNumbers = worksheet.cell_value(curr_row,6)
-    item.messaging = worksheet.cell_value(curr_row,7)
-    item.organization = worksheet.cell_value(curr_row,8)
-    item.department = worksheet.cell_value(curr_row,9)
-    item.street = worksheet.cell_value(curr_row,10)
-    item.zip = worksheet.cell_value(curr_row,11)
-    item.city = worksheet.cell_value(curr_row,12)
-    item.country = worksheet.cell_value(curr_row,13)
-    item.jobTitle =  worksheet.cell_value(curr_row,14)
-    item.preferredLanguage = worksheet.cell_value(curr_row,15)
-    d_id = worksheet.cell_value(curr_row,16)
-    if d_id:
-        device, new = EpicDevice.objects.get_or_create(deviceUid=d_id,Description="Radio For "+item.username,Capabilities="gps")
-        item.deviceID =  device
-    item.save()
-    if new:
+    if worksheet.cell_value(curr_row,0) != '':
+        item,new = EpicUser.objects.get_or_create(username =  worksheet.cell_value(curr_row,0))
+        item.personalTitle = worksheet.cell_value(curr_row,1)
+        item.firstName = worksheet.cell_value(curr_row,2)
+        item.lastName = worksheet.cell_value(curr_row,3)
+        item.eMail = worksheet.cell_value(curr_row,4)
+        item.phoneNumbers = worksheet.cell_value(curr_row,5)
+        item.foodsat = worksheet.cell_value(curr_row,6)
+        # 7 VHF callsign
+        item.vhfCallsign = worksheet.cell_value(curr_row,7)
+        item.organization = worksheet.cell_value(curr_row,8)
+        item.department = worksheet.cell_value(curr_row,9)
+        item.street = worksheet.cell_value(curr_row,10)
+        item.zip = worksheet.cell_value(curr_row,11)
+        item.city = worksheet.cell_value(curr_row,12)
+        item.country = worksheet.cell_value(curr_row,13)
+        item.jobTitle =  worksheet.cell_value(curr_row,14)
+        item.save()
+        if new:
+            pass
+    except:
         pass
     
 
 def make_place(worksheet,curr_row):
+    if 
     item,new = EpicPlace.objects.get_or_create(placeID =  worksheet.cell_value(curr_row,0))
     item.compasID = worksheet.cell_value(curr_row,1)
     item.description = worksheet.cell_value(curr_row,2)
