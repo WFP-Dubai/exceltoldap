@@ -89,35 +89,33 @@ def make_user(worksheet,curr_row):
         item.country = worksheet.cell_value(curr_row,13)
         item.jobTitle =  worksheet.cell_value(curr_row,14)
         item.save()
-        if new:
-            pass
-    
+
 
 def make_place(worksheet,curr_row):
-    if 
-    item,new = EpicPlace.objects.get_or_create(placeID =  worksheet.cell_value(curr_row,0))
-    item.compasID = worksheet.cell_value(curr_row,1)
-    item.description = worksheet.cell_value(curr_row,2)
-    item.type = worksheet.cell_value(curr_row,3)
-    item.organization = worksheet.cell_value(curr_row,4)
-    item.department = worksheet.cell_value(curr_row,5)
-    item.street = worksheet.cell_value(curr_row,6)
-    item.zip = worksheet.cell_value(curr_row,7)
-    item.city = worksheet.cell_value(curr_row,8)
-    item.country = worksheet.cell_value(curr_row,9)
-    item.eMail = worksheet.cell_value(curr_row,10)
-    item.phoneNumbers = worksheet.cell_value(curr_row,11)
-    item.messaging = worksheet.cell_value(curr_row,12)
-    item.altitude = worksheet.cell_value(curr_row,13)
-    item.latitude =  worksheet.cell_value(curr_row,14)
-    item.longitude = worksheet.cell_value(curr_row,15)
-    d_id = worksheet.cell_value(curr_row,16)
-    if d_id:
-        device, new = EpicDevice.objects.get_or_create(deviceUid=d_id,Description="Radio For "+item.vehicleID,Capabilities="gps")
-        item.deviceID =  device
-    item.save()
-    if new:
-        pass
+    if  worksheet.cell_value(curr_row,0) != '':
+        item,new = EpicPlace.objects.get_or_create(placeID =  worksheet.cell_value(curr_row,0))
+        item.compasID = worksheet.cell_value(curr_row,1)
+        item.description = worksheet.cell_value(curr_row,2)
+        item.type = worksheet.cell_value(curr_row,3)
+        item.organization = worksheet.cell_value(curr_row,4)
+        item.department = worksheet.cell_value(curr_row,5)
+        item.street = worksheet.cell_value(curr_row,6)
+        item.zip = worksheet.cell_value(curr_row,7)
+        item.city = worksheet.cell_value(curr_row,8)
+        item.country = worksheet.cell_value(curr_row,9)
+        item.eMail = worksheet.cell_value(curr_row,10)
+        item.phoneNumbers = worksheet.cell_value(curr_row,11)
+        item.messaging = worksheet.cell_value(curr_row,12)
+        item.altitude = worksheet.cell_value(curr_row,13)
+        item.latitude =  worksheet.cell_value(curr_row,14)
+        item.longitude = worksheet.cell_value(curr_row,15)
+        d_id = worksheet.cell_value(curr_row,16)
+        if d_id:
+            device, new = EpicDevice.objects.get_or_create(deviceUid=d_id,Description="Radio For "+item.vehicleID,Capabilities="gps")
+            item.deviceID =  device
+        item.save()
+        if new:
+            pass
     
 def make_vehicle(worksheet,curr_row):
     item,new = EpicVehicle.objects.get_or_create(vehicleID =  worksheet.cell_value(curr_row,0))
