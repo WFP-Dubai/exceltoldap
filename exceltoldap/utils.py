@@ -91,8 +91,6 @@ def make_user(worksheet,curr_row):
         item.save()
         if new:
             pass
-    except:
-        pass
     
 
 def make_place(worksheet,curr_row):
