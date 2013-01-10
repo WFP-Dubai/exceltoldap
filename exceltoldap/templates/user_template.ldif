@@ -18,15 +18,25 @@ objectClass: organizationalPerson{%if user.country%}
 c: {{user.country}}{%endif%}{%if user.firstName%}
 cn: {{user.firstName}}{%endif%}{%if user.lastName%}
 sn: {{user.lastName}}{%endif%}{%if user.eMail%}
-mail: {{user.eMail}}{%if user.additionalEmails%}|{{user.additionalEmails}}{%endif%}{%endif%}{%if user.organization%}
+mail: {{user.eMail}}
+communicationUri: sip:{{user.eMail}}{%endif%}{%if user.organization%}
 o: {{user.organization}}{%endif%}{%if user.department%}
 ou: {{user.department}}{%endif%}{%if user.personalTitle%}
 personalTitle: {{user.personalTitle}}{%endif%}{%if user.zip%}
 postalCode: {{user.zip}}{%endif%}{%if user.preferredLanguage%}
 preferredLanguage: {{user.preferredLanguage}}{%endif%}{%if user.street%}
 street: {{user.street}}{%endif%}{%if user.username%}
-uid: {{user.username}}{%endif%}{%if user.messaging%}
-communicationUri:{{user.messaging}}{%endif%}{%if user.phoneNumbers%}
-telephoneNumber:{{user.phoneNumbers}}{%endif%}
+uid: {{user.username}}{%endif%}{%if user.skype%}
+communicationUri: skype:{{user.skype}}{%endif%}{%if user.msnim%}
+communicationUri: msnim:{{user.msnim}}{%endif%}{%if user.vhfCallsign%}
+communicationUri: VHFcallsign:{{user.vhfCallsign}}{%endif%}{%if user.mobilePhoneNumber%}
+telephoneNumber: Mobile:{{user.mobilePhoneNumber}}{%endif%}
+{%if user.wavePhoneNumber%}
+telephoneNumber: WAVE:{{user.wavePhoneNumber}}{%endif%}
+{%if user.foodsatPhoneNumber%}
+telephoneNumber: FoodSat:{{userfoodsatPhoneNumber}}{%endif%}
+{%if user.satelitePhoneNumber%}
+telephoneNumber: Thuraya:{{user.satelitePhoneNumber}}{%endif%}
+userPassword: 123456
 
 {% endfor %}

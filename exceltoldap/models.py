@@ -20,9 +20,19 @@ class EpicUser( models.Model):
     firstName = models.CharField(blank=True, null=True, max_length = 50)
     lastName = models.CharField(blank=True, null=True, max_length = 50)
     eMail = models.CharField(blank=True, null=True, max_length = 100)
-    additionalEmails = models.CharField(blank=True, null=True, max_length = 200)
-    phoneNumbers = models.CharField(blank=True, null=True, max_length = 200)
-    messaging = models.CharField(blank=True, null=True, max_length = 200)
+    #additionalEmails = models.CharField(blank=True, null=True, max_length = 200)
+    mobilePhoneNumber = models.CharField(blank=True, null=True, max_length = 200)
+    satelitePhoneNumber = models.CharField(blank=True, null=True, max_length = 200)
+    officePhoneNumber = models.CharField(blank=True, null=True, max_length = 200)
+    wavePhoneNumber = models.CharField(blank=True, null=True, max_length = 200)
+    foodsat = models.CharField(max_length=20, blank=True, null=True, help_text="")
+    
+    #messaging = models.CharField(blank=True, null=True, max_length = 200)
+    sip = models.CharField(blank=True, null=True, max_length = 200)
+    skype = models.CharField(blank=True, null=True, max_length = 200)
+    msnim = models.CharField(blank=True, null=True, max_length = 200)
+    vhfCallsign = models.CharField(max_length=10, blank=True, null=True, help_text="")
+    
     organization = models.CharField(blank=True, null=True, max_length = 50)
     department = models.CharField(blank=True, null=True, max_length = 50)
     street = models.CharField(blank=True, null=True, max_length = 50)
@@ -32,8 +42,7 @@ class EpicUser( models.Model):
     jobTitle = models.CharField(blank=True, null=True, max_length = 50)
     preferredLanguage = models.CharField(blank=True, null=True, max_length = 50)
     deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
-    foodsat = models.CharField(max_length=20, blank=True, null=True, help_text="")
-    vhfCallsign = models.CharField(max_length=10, blank=True, null=True, help_text="")
+        
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
@@ -41,12 +50,15 @@ class EpicVehicle( models.Model):
     vehicleID = models.CharField(primary_key=True,max_length = 50)
     description = models.CharField(blank=True, null=True, max_length = 200)
     type = models.CharField(blank=True, null=True, max_length = 20)
-    messaging = models.CharField(blank=True, null=True, max_length = 200)
+    vhfCallsign = models.CharField(blank=True, null=True, max_length = 200)
+    HFCallsign  = models.CharField(blank=True, null=True, max_length = 200)
     licensePlate = models.CharField(blank=True, null=True, max_length = 50)
     VIN = models.CharField(blank=True, null=True, max_length = 50)
     deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+
 
 class EpicPlace( models.Model):
     placeID = models.CharField(primary_key=True,max_length = 50)

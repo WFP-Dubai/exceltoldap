@@ -12,8 +12,9 @@ objectClass: top
 objectClass: vehicle
 type: cn={{vehicle.type}},ou=vehicleTypes,ou=resourcesTypes,dc=emergency,dc=lu
 cn: {{vehicle.vehicleID}}{% if vehicle.description%}
-description: {{vehicle.description}}{%endif%}{%if vehicle.messaging%} {{vehicle.deviceID.deviceUid}}
-communicationUri: {{vehicle.messaging}}{%endif%}{%if vehicle.licensePlate%}
+description: {{vehicle.description}}{%endif%}{%if vehicle.vhfCallsign%} 
+communicationUri: VHFcallsign:{{vehicle.vhfCallsign}}{%endif%}{%if vehicle.HFCallsign%} 
+communicationUri: HFcallsign:{{vehicle.HFCallsign}}{%endif%}{%if vehicle.licensePlate%}
 licencePlate: {{vehicle.licensePlate}}{%endif%}{%if vehicle.VIN%}
 VIN: {{vehicle.VIN}}{%endif%}
 

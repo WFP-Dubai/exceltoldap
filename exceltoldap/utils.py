@@ -2,6 +2,8 @@ from models import EpicUser, EpicPlace, EpicVehicle,EpicDevice
 import datetime
 import xlrd
 
+
+
 def parse_excel(uploaded_file):
     # read file
     # Check file correct file
@@ -77,18 +79,25 @@ def make_user(worksheet,curr_row):
         item.firstName = worksheet.cell_value(curr_row,2)
         item.lastName = worksheet.cell_value(curr_row,3)
         item.eMail = worksheet.cell_value(curr_row,4)
-        item.phoneNumbers = worksheet.cell_value(curr_row,5)
-        item.foodsat = worksheet.cell_value(curr_row,6)
-        # 7 VHF callsign
-        item.vhfCallsign = worksheet.cell_value(curr_row,7)
-        item.organization = worksheet.cell_value(curr_row,8)
-        item.department = worksheet.cell_value(curr_row,9)
-        item.street = worksheet.cell_value(curr_row,10)
-        item.zip = worksheet.cell_value(curr_row,11)
-        item.city = worksheet.cell_value(curr_row,12)
-        item.country = worksheet.cell_value(curr_row,13)
-        item.jobTitle =  worksheet.cell_value(curr_row,14)
+        item.cellPhoneNumber = worksheet.cell_value(curr_row,5)
+        item.satelitePhoneNumber = worksheet.cell_value(curr_row,6)
+        item.officePhoneNumber  = worksheet.cell_value(curr_row,7)
+        item.wavePhoneNumber = worksheet.cell_value(curr_row,8)
+        item.foodsat = worksheet.cell_value(curr_row,9)
+        item.sip =  worksheet.cell_value(curr_row,10)
+        item.skype  = worksheet.cell_value(curr_row,11)
+        item.msnim = worksheet.cell_value(curr_row,12)
+        item.vhfCallsign = worksheet.cell_value(curr_row,13)
+        item.organization = worksheet.cell_value(curr_row,14)
+        item.department = worksheet.cell_value(curr_row,15)
+        item.street = worksheet.cell_value(curr_row,16)
+        item.zip = worksheet.cell_value(curr_row,17)
+        item.city = worksheet.cell_value(curr_row,18)
+        item.country = worksheet.cell_value(curr_row,19)
+        item.jobTitle =  worksheet.cell_value(curr_row,20)
         item.save()
+        if new:
+            pass
 
 
 def make_place(worksheet,curr_row):
@@ -121,14 +130,18 @@ def make_vehicle(worksheet,curr_row):
     item,new = EpicVehicle.objects.get_or_create(vehicleID =  worksheet.cell_value(curr_row,0))
     item.description = worksheet.cell_value(curr_row,1)
     item.type = worksheet.cell_value(curr_row,2)
-    item.messaging = worksheet.cell_value(curr_row,3)
-    item.licensePlate = worksheet.cell_value(curr_row,4)
+    item.vhfCallsign = worksheet.cell_value(curr_row,3)
+    item.HFCallsign = worksheet.cell_value(curr_row,4)
+    item.licensePlate = worksheet.cell_value(curr_row,5)
     item.VIN = worksheet.cell_value(curr_row,5)
     #make or link device
     d_id = worksheet.cell_value(curr_row,6)
     if d_id:
-        device, new = EpicDevice.objects.get_or_create(deviceUid=d_id,Description="Radio For "+item.vehicleID,Capabilities="gps")
-        item.deviceID =  device
+        try:
+            device, new = EpicDevice.objects.get_or_create(deviceUid=d_id,Description="Radio For "+item.vehicleID,Capabilities="gps")
+            item.deviceID =  device
+        except:
+            pass
     item.save()
     if new:
         pass
