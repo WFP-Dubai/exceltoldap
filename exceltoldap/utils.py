@@ -1,7 +1,7 @@
 from models import EpicUser, EpicPlace, EpicVehicle,EpicDevice
 import datetime
 import xlrd
-
+import settings
 
 
 def parse_excel(uploaded_file):
@@ -9,7 +9,7 @@ def parse_excel(uploaded_file):
     # Check file correct file
     # open Excel
     
-    workbook = xlrd.open_workbook("/opt/exceltoldap/documents/" + uploaded_file.docfile.url)
+    workbook = xlrd.open_workbook(settings.MEDIA_ROOT + uploaded_file.docfile.url)
     
     #Call import users
     users = workbook.sheet_by_name('Users')
