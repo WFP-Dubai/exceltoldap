@@ -9,7 +9,7 @@ def parse_excel(uploaded_file):
     # Check file correct file
     # open Excel
     
-    workbook = xlrd.open_workbook(uploaded_file.docfile.name)
+    workbook = xlrd.open_workbook("/opt/exceltoldap/documents/" + uploaded_file.docfile.url)
     
     #Call import users
     users = workbook.sheet_by_name('Users')
