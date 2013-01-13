@@ -51,11 +51,8 @@ def import_places(worksheet):
             pass
     while curr_row < num_rows:
         curr_row += 1
-        try:
-            make_place(worksheet,curr_row)
-        except:
-            pass
-
+        make_place(worksheet,curr_row)
+        
     return True
     
     
@@ -118,10 +115,6 @@ def make_place(worksheet,curr_row):
         item.altitude = worksheet.cell_value(curr_row,13)
         item.latitude =  worksheet.cell_value(curr_row,14)
         item.longitude = worksheet.cell_value(curr_row,15)
-        d_id = worksheet.cell_value(curr_row,16)
-        if d_id:
-            device, new = EpicDevice.objects.get_or_create(deviceUid=d_id,Description="Radio For "+item.vehicleID,Capabilities="gps")
-            item.deviceID =  device
         item.save()
         if new:
             pass
