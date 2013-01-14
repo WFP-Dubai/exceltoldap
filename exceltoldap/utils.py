@@ -110,18 +110,18 @@ def make_place(worksheet,curr_row):
         item.city = worksheet.cell_value(curr_row,8)
         item.country = worksheet.cell_value(curr_row,9)
         item.eMail = worksheet.cell_value(curr_row,10)
-        item.phoneNumbers = worksheet.cell_value(curr_row,11)
+        item.phoneNumbers = worksheet.cell_value(curr_row,12)
         item.messaging = worksheet.cell_value(curr_row,12)
         try:
-            item.altitude = float(worksheet.cell_value(curr_row,13))
+            item.altitude = float(worksheet.cell_value(curr_row,15))
         except:
             pass
         try:        
-            item.latitude =  float(worksheet.cell_value(curr_row,14))
+            item.latitude =  float(worksheet.cell_value(curr_row,16))
         except:
             pass
         try:
-            item.longitude = float(worksheet.cell_value(curr_row,15))
+            item.longitude = float(worksheet.cell_value(curr_row,17))
         except:
             pass
         item.save()
