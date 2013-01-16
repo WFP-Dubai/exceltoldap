@@ -69,7 +69,7 @@ class EpicPlace( models.Model):
     department = models.CharField(blank=True, null=True, max_length = 20)
     street = models.CharField(blank=True, null=True, max_length = 200)
     zip = models.CharField(blank=True, null=True, max_length = 20)
-    city = models.CharField(blank=True, null=True, max_length = 20)
+    city = models.CharField(blank=True, null=True, max_length = 200)
     country = models.CharField(blank=True, null=True, max_length = 20)
     eMail = models.CharField(blank=True, null=True, max_length = 200)
     phoneNumbers = models.CharField(blank=True, null=True, max_length = 200)
