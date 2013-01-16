@@ -9,16 +9,19 @@ ou: places
 dn: cn= {{place.placeID}} ,ou=places,ou=resources,dc=emergency,dc=lu
 objectClass: place
 objectClass: top
+o: {{place.organization}}
 cn: {{place.placeID}}
 coord-latitude: {{place.longitude}}
 coord-longitude: {{place.latitude}}{%if place.altitude%}
 coord-altitude: {{place.altitude}}{%endif%}{%if place.compasID%}
 compasId: {{place.compasID}}
-externalID: compasReporting:{{place.compasID}}{%endif%}
-description: {{place.description}}
-type: cn={{place.type}},ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu
-l: {{place.city}}
-postalCode: {{place.zip}}
-street: {{place.street}}
+externalID: compasReporting:{{place.compasID}}{%endif%}{%if place.description%}
+description: {{place.description}}{%endif%}{%if place.type%}
+type: cn={{place.type}},ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu{%endif%}{%if place.city%}
+l: {{place.city}}{%endif%}{%if place.country%}
+c: {{place.country}}{%endif%}{%if place.zip%}
+postalCode: {{place.zip}}{%endif%}{%if place.street%}
+street: {{place.street}}{%endif%}
+
 
 {%endfor%}
