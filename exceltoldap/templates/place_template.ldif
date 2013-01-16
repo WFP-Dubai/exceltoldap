@@ -1,9 +1,5 @@
 version: 1
 
-dn: ou=places,ou=resources,dc=emergency,dc=lu
-objectClass: top
-objectClass: organizationalUnit
-ou: places
 
 {%for place in places%}
 dn: cn= {{place.placeID}} ,ou=places,ou=resources,dc=emergency,dc=lu
