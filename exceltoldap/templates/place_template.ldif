@@ -18,7 +18,7 @@ compasId: {{place.compasID}}
 externalID: compasReporting:{{place.compasID}}{%endif%}{%if place.description%}
 description: {{place.description}}{%endif%}{%if place.type%}
 type: cn={{place.type}},ou=placeTypes,ou=resourcesTypes,dc=emergency,dc=lu{%endif%}{%if place.city%}
-l: {{place.city}}{%endif%}{%if place.country%}
+locality: {{place.city}}{%endif%}{%if place.country%}
 c: {{place.country}}{%endif%}{%if place.zip%}
 postalCode: {{place.zip}}{%endif%}{%if place.street%}
 street: {{place.street}}{%endif%}
