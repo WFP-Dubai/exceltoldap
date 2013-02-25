@@ -7,8 +7,8 @@ objectClass: place
 objectClass: top
 o: {{place.organization}}
 cn: {{place.placeID}}
-coord-latitude: {{place.longitude}}
-coord-longitude: {{place.latitude}}{%if place.altitude%}
+coord-longitude: {{place.longitude}}
+coord-latitude: {{place.latitude}}{%if place.altitude%}
 coord-altitude: {{place.altitude}}{%endif%}{%if place.compasID%}
 compasId: {{place.compasID}}
 externalID: compasReporting:{{place.compasID}}{%endif%}{%if place.description%}
