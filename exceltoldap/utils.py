@@ -12,9 +12,9 @@ def parse_excel(uploaded_file):
     workbook = xlrd.open_workbook(settings.MEDIA_ROOT + uploaded_file.docfile.url)
     
     #Call import users
-    users = workbook.sheet_by_name('Users')
+    users = workbook.sheet_by_name(u'Users')
     import_users(users)
-    places = workbook.sheet_by_name('Places')
+    places = workbook.sheet_by_name(u'Places')
     import_places(places)
     vehicles = workbook.sheet_by_name(u'Vehicles')
     import_vehicles(vehicles)
@@ -135,7 +135,7 @@ def make_vehicle(worksheet,curr_row):
     item.vhfCallsign = worksheet.cell_value(curr_row,3)
     item.HFCallsign = worksheet.cell_value(curr_row,4)
     item.licensePlate = worksheet.cell_value(curr_row,5)
-    item.VIN = worksheet.cell_value(curr_row,5)
+    item.VIN = worksheet.cell_value(curr_row,6)
     #make or link device
     d_id = worksheet.cell_value(curr_row,6)
     if d_id:
