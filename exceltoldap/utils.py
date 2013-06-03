@@ -199,7 +199,7 @@ def make_user(worksheet,curr_row):
         item.cellPhoneNumber = worksheet.cell_value(curr_row,cmobile)
         item.satelitePhoneNumber = worksheet.cell_value(curr_row,csatellite)
         item.officePhoneNumber  = worksheet.cell_value(curr_row,coffice)
-        item.wavePhoneNumber = worksheet.cell_value(curr_row,csip)
+        item.wavePhoneNumber = worksheet.cell_value(curr_row,cradio)
         item.foodsat = worksheet.cell_value(curr_row,cfoodsat)
         item.sip =  worksheet.cell_value(curr_row,csip)
         item.skype  = worksheet.cell_value(curr_row,cskype)

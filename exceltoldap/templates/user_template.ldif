@@ -19,6 +19,7 @@ c: {{user.country}}{%endif%}{%if user.firstName%}
 cn: {{user.firstName}}{%endif%}{%if user.lastName%}
 sn: {{user.lastName}}{%endif%}{%if user.eMail%}
 mail: {{user.eMail}}
+primaryMail: {{user.eMail}}
 communicationUri: sip:{{user.eMail}}{%endif%}{%if user.organization%}
 o: {{user.organization}}{%endif%}{%if user.department%}
 ou: {{user.department}}{%endif%}{%if user.personalTitle%}
@@ -31,9 +32,11 @@ communicationUri: skype:{{user.skype}}{%endif%}{%if user.msnim%}
 communicationUri: msnim:{{user.msnim}}{%endif%}{%if user.vhfCallsign%}
 communicationUri: VHFcallsign:{{user.vhfCallsign}}{%endif%}{%if user.mobilePhoneNumber%}
 telephoneNumber: Mobile:{{user.mobilePhoneNumber}}{%endif%}{%if user.wavePhoneNumber%}
-telephoneNumber: WAVE:{{user.wavePhoneNumber}}{%endif%}{%if user.foodsatPhoneNumber%}
-telephoneNumber: FoodSat:{{userfoodsatPhoneNumber}}{%endif%}{%if user.satelitePhoneNumber%}
-telephoneNumber: Thuraya:{{user.satelitePhoneNumber}}{%endif%}
+telephoneNumber: Radio:{{user.wavePhoneNumber}}{%endif%}{%if user.foodsatPhoneNumber%}
+telephoneNumber: FoodSat:{{user.foodsatPhoneNumber}}{%endif%}{%if user.satelitePhoneNumber%}
+telephoneNumber: Thuraya:{{user.satelitePhoneNumber}}{%endif%}{%if user.officePhoneNumber%}
+telephoneNumber: Office:{{user.officePhoneNumber}}{%endif%}
+
 userEnabled: TRUE
 userPassword:: 7c4a8d09ca3762af61e59520943dc26494f8941b
 
