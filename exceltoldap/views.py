@@ -78,7 +78,7 @@ def devices(request):
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
-    #response['Content-Disposition'] = 'attachment; filename="devices.ldif"'
+    response['Content-Disposition'] = 'attachment; filename="devices.ldif"'
     return response
 
 def all_items(request):
