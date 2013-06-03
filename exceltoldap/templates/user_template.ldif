@@ -1,10 +1,5 @@
 version: 1
 
-dn: ou=users,ou=people,dc=emergency,dc=lu
-objectClass: organizationalUnit
-objectClass: top
-ou: users
-
 
 {% for user in users%}
 dn: uid={{user.username}},ou=users,ou=people,dc=emergency,dc=lu
@@ -36,7 +31,6 @@ telephoneNumber: Radio:{{user.wavePhoneNumber}}{%endif%}{%if user.foodsatPhoneNu
 telephoneNumber: FoodSat:{{user.foodsatPhoneNumber}}{%endif%}{%if user.satelitePhoneNumber%}
 telephoneNumber: Thuraya:{{user.satelitePhoneNumber}}{%endif%}{%if user.officePhoneNumber%}
 telephoneNumber: Office:{{user.officePhoneNumber}}{%endif%}
-
 userEnabled: TRUE
 userPassword:: 7c4a8d09ca3762af61e59520943dc26494f8941b
 
