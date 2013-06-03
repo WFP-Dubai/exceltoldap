@@ -76,7 +76,7 @@ def devices(request):
         'devices_template.ldif',
         {'devices_places': dev_places,'devices_vehicles': dev_vehicles,'devices_users': dev_users, 'devices':devices},
         context_instance=RequestContext(request),
-        mimetype="text/html"
+        mimetype="text/text"
     )
     #response['Content-Disposition'] = 'attachment; filename="devices.ldif"'
     return response
