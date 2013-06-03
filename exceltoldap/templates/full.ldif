@@ -5,3 +5,6 @@
 
 
 {% include 'place_template.ldif' %}
+
+
+{% include 'devices_template.ldif' %}

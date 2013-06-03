@@ -67,15 +67,31 @@ def places(request):
     response['Content-Disposition'] = 'attachment; filename="places.ldif"'
     return response
 
-
+def devices(request):
+    dev_places = EpicDevice.objects.exclude(place = None)
+    dev_vehicles = EpicDevice.objects.exclude(vehicle = None)
+    dev_users = EpicDevice.objects.exclude(owner = None)
+    devices = EpicDevice.objects.all() 
+    response = render_to_response(
+        'devices_template.ldif',
+        {'devices_places': dev_places,'devices_vehicles': dev_vehicles,'devices_users': dev_users, 'devices':devices},
+        context_instance=RequestContext(request),
+        mimetype="text/html"
+    )
+    #response['Content-Disposition'] = 'attachment; filename="devices.ldif"'
+    return response
 
 def all_items(request):
     places = EpicPlace.objects.all()
     vehicles = EpicVehicle.objects.all()
-    users = EpicUser.objects.all()        
+    users = EpicUser.objects.all()   
+    dev_places = EpicDevice.objects.exclude(place = None)
+    dev_vehicles = EpicDevice.objects.exclude(vehicle = None)
+    dev_users = EpicDevice.objects.exclude(owner = None)
+    devices = EpicDevice.objects.all()      
     response = render_to_response(
         'full.ldif',
-        {'places': places,'vehicles': vehicles,'users': users},
+        {'places': places,'vehicles': vehicles,'users': users,'devices_places': dev_places,'devices_vehicles': dev_vehicles,'devices_users': dev_users, 'devices':devices},
         context_instance=RequestContext(request),
         mimetype="text/text"
     )

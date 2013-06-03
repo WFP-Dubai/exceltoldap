@@ -7,12 +7,6 @@ class Document(models.Model):
     imported = models.DateTimeField(blank=True, null=True)
 
 
-class EpicDevice( models.Model):
-    deviceUid = models.CharField(max_length = 50, primary_key=True)
-    Description = models.CharField(blank=True, null=True, max_length = 200)
-    Capabilities = models.CharField(blank=True, null=True, max_length = 20)
-    added = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
 
 class EpicUser( models.Model):
     username = models.CharField(primary_key=True, max_length = 50)
@@ -35,16 +29,18 @@ class EpicUser( models.Model):
     
     organization = models.CharField(blank=True, null=True, max_length = 50)
     department = models.CharField(blank=True, null=True, max_length = 50)
-    street = models.CharField(blank=True, null=True, max_length = 50)
+    street = models.CharField(blank=True, null=True, max_length = 200)
     zip = models.CharField(blank=True, null=True, max_length = 50)
     city = models.CharField(blank=True, null=True, max_length = 50)
     country = models.CharField(blank=True, null=True, max_length = 50)
     jobTitle = models.CharField(blank=True, null=True, max_length = 50)
     preferredLanguage = models.CharField(blank=True, null=True, max_length = 50)
-    deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
         
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+
+
 
 class EpicVehicle( models.Model):
     vehicleID = models.CharField(primary_key=True,max_length = 50)
@@ -54,7 +50,6 @@ class EpicVehicle( models.Model):
     HFCallsign  = models.CharField(blank=True, null=True, max_length = 200)
     licensePlate = models.CharField(blank=True, null=True, max_length = 50)
     VIN = models.CharField(blank=True, null=True, max_length = 50)
-    deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
@@ -77,6 +72,17 @@ class EpicPlace( models.Model):
     altitude = models.FloatField( null = True, db_column = 'Altitude', blank = True)
     latitude = models.FloatField( db_column = 'Latitude' ,null=True, blank = True)
     longitude = models.FloatField( db_column = 'Longitude', null=True,blank = True)
-    deviceID = models.ForeignKey(EpicDevice,blank=True, null=True)
+    added = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+
+
+class EpicDevice( models.Model):
+    deviceUid = models.CharField(max_length = 50, primary_key=True)
+    description = models.CharField(blank=True, null=True, max_length = 200)
+    capabilities = models.CharField(blank=True, null=True, max_length = 20)
+    type = models.CharField(blank=True, null=True, max_length = 20)
+    owner = models.ForeignKey(EpicUser,blank=True, null=True)
+    vehicle = models.ForeignKey(EpicVehicle,blank=True, null=True)
+    place = models.ForeignKey(EpicPlace,blank=True, null=True)
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)

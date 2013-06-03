@@ -1,0 +1,49 @@
+version: 1
+
+
+
+
+
+
+
+{%for device in devices%}
+dn: cn={{device.deviceUid}},ou=devices,dc=emergency,dc=lu
+objectClass: mwdevice
+objectClass: top
+cn: {{device.deviceUid}}
+description: {{device.description}}
+devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
+domain: cn=default,cn=mw-A1-nrap01,ou=middlewares,dc=emergency,dc=lu
+
+{% endfor %}
+
+
+
+{%for group in devices_places%}
+dn: cn={{group.deviceUid}}-{{group.place.placeID}},ou=groups,dc=emergency,dc=lu
+objectClass: top
+objectClass: groupOfNames
+cn: {{group.deviceUid}}-{{group.place.placeID}}
+member: uid={{group.place.placeID}} ,ou=places,ou=resources,dc=emergency,dc=lu
+member: cn={{groupitem.deviceUid}},ou=devices,dc=emergency,dc=lu
+
+{%endfor%}
+{%for group in devices_vehicles%}
+dn: cn={{group.deviceUid}}-{{group.vehicle.vehicleID}},ou=groups,dc=emergency,dc=lu
+objectClass: top
+objectClass: groupOfNames
+cn: {{group.deviceUid}}-{{group.vehicle.vehicleID}}
+member: uid={{group.vehicle.vehicleID}},ou=vehicles,ou=resources,dc=emergency,dc=lu
+member: cn={{groupitem.deviceUid}},ou=devices,dc=emergency,dc=lu
+
+{%endfor%}
+
+{%for group in devices_users%}
+dn: cn={{group.deviceUid}}-{{group.owner.username}},ou=groups,dc=emergency,dc=lu
+objectClass: top
+objectClass: groupOfNames
+cn: {{group.deviceUid}}-{{group.owner.username}}
+member: uid={{group.owner.username}},ou=users,ou=people,dc=emergency,dc=lu
+member: cn={{groupitem.deviceUid}},ou=devices,dc=emergency,dc=lu
+
+{%endfor%}
