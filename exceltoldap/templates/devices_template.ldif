@@ -2,10 +2,6 @@ version: 1
 
 
 
-
-
-
-
 {%for device in devices%}
 dn: cn={{device.deviceUid}},ou=devices,dc=emergency,dc=lu
 objectClass: mwdevice
@@ -18,7 +14,6 @@ displayName: {{device.description}}
 {% endfor %}
 
 
-
 {%for group in devices_places%}
 dn: cn={{group.deviceUid}}-{{group.place.placeID}},ou=groups,dc=emergency,dc=lu
 objectClass: top
@@ -28,6 +23,7 @@ member: uid={{group.place.placeID}} ,ou=places,ou=resources,dc=emergency,dc=lu
 member: cn={{group.deviceUid}},ou=devices,dc=emergency,dc=lu
 
 {%endfor%}
+
 {%for group in devices_vehicles%}
 dn: cn={{group.deviceUid}}-{{group.vehicle.vehicleID}},ou=groups,dc=emergency,dc=lu
 objectClass: top

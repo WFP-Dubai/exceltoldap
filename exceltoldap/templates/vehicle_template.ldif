@@ -1,10 +1,5 @@
 version: 1
 
-dn: ou=vehicles,ou=resources,dc=emergency,dc=lu
-objectClass: organizationalUnit
-objectClass: top
-ou: vehicles
-
 
 {% for vehicle in vehicles%}
 dn: cn={{vehicle.vehicleID}},ou=vehicles,ou=resources,dc=emergency,dc=lu
@@ -17,5 +12,6 @@ communicationUri: VHFcallsign:{{vehicle.vhfCallsign}}{%endif%}{%if vehicle.HFCal
 communicationUri: HFcallsign:{{vehicle.HFCallsign}}{%endif%}{%if vehicle.licensePlate%}
 licencePlate: {{vehicle.licensePlate}}{%endif%}{%if vehicle.VIN%}
 VIN: {{vehicle.VIN}}{%endif%}
+
 
 {% endfor %}
