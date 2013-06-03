@@ -26,11 +26,11 @@ uid: {{user.username}}{%endif%}{%if user.skype%}
 communicationUri: skype:{{user.skype}}{%endif%}{%if user.msnim%}
 communicationUri: msnim:{{user.msnim}}{%endif%}{%if user.vhfCallsign%}
 communicationUri: VHFcallsign:{{user.vhfCallsign}}{%endif%}{%if user.mobilePhoneNumber%}
-telephoneNumber: Mobile:{{user.mobilePhoneNumber}}{%endif%}{%if user.wavePhoneNumber%}
-telephoneNumber: Radio:{{user.wavePhoneNumber}}{%endif%}{%if user.foodsatPhoneNumber%}
-telephoneNumber: FoodSat:{{user.foodsatPhoneNumber}}{%endif%}{%if user.satelitePhoneNumber%}
-telephoneNumber: Thuraya:{{user.satelitePhoneNumber}}{%endif%}{%if user.officePhoneNumber%}
-telephoneNumber: Office:{{user.officePhoneNumber}}{%endif%}
+otherPhones: {{user.mobilePhoneNumber}}|Mobile{%endif%}{%if user.wavePhoneNumber%}
+otherPhones: {{user.wavePhoneNumber}}|Radio{%endif%}{%if user.foodsatPhoneNumber%}
+otherPhones: {{user.foodsatPhoneNumber}}|FoodSat{%endif%}{%if user.satelitePhoneNumber%}
+otherPhones: {{user.satelitePhoneNumber}}|Thuraya{%endif%}{%if user.officePhoneNumber%}
+otherPhones: {{user.officePhoneNumber}}|Office{%endif%}
 userEnabled: TRUE
 userPassword:: 7c4a8d09ca3762af61e59520943dc26494f8941b
 
