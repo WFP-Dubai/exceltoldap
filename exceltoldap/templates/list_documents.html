@@ -5,8 +5,6 @@
         <title>Excel File Upload Tool</title>   
     </head>
     <body>
-
-	<!-- Upload form. Note enctype attribute! -->
 	<form action="{% url "list_documents" %}" method="post" enctype="multipart/form-data">
 	    {% csrf_token %}
 	    <p>{{ form.non_field_errors }}</p>
@@ -17,16 +15,19 @@
 	    </p>
 	    <p><input type="submit" value="Upload" /></p>
 	</form>
-
+Latest File: {{last_document.docfile.name}} 
+<br />Uploaded on :{{last_document.uploaded}} GMT
+Mission: {{last_document.missionName}}
 	<div style="padding:10px; margins:10px; border:1px solid silver;">
-		<a href="../users/" >Export Users</a> &middot;
-		<a href="../vehicles/" >Export Vehicles</a> &middot; 
-		<a href="../places/" >Export Places</a>&middot;
+		<a href="users/" >Export Users</a> &middot;
+		<a href="vehicles/" >Export Vehicles</a> &middot; 
+		<a href="places/" >Export Places</a>&middot;
 		<a href="devices/" >Export Devices/Groups</a>
+		<a href="missions/" >Export Missions</a>
 		<br/>
 		<a href="../all/">Export all of the above</a>
 		<hr/>
 	</div>
-<small>v 1.40</small>
+<small>v 1.45</small>
     </body>
 </html> 

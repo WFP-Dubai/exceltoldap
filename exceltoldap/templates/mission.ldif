@@ -1,0 +1,37 @@
+version: 1
+
+dn: uniqueID={{exercise}},ou=missions,dc=emergency,dc=lu
+changetype:modify
+delete: member
+
+dn: uniqueID={{exercise}},ou=missions,dc=emergency,dc=lu
+changetype:modify
+delete: vehicleMember
+
+dn: uniqueID={{exercise}},ou=missions,dc=emergency,dc=lu
+changetype:modify
+delete: placeMember
+
+
+{%for user in users%}
+dn: uniqueID={{exercise}},ou=missions,dc=emergency,dc=lu
+changetype:modify
+add: member
+member: uid={{user.username}},ou=users,ou=people,dc=emergency,dc=lu
+
+{%endfor%}
+
+{%for vehicle in vehicles%}
+dn: uniqueID={{exercise}},ou=missions,dc=emergency,dc=lu
+changetype:modify
+add: vehicleMember
+vehicleMember: cn={{vehicle.vehicleID}},ou=vehicles,ou=resources,dc=emergency,dc=lu
+
+{%endfor%}
+
+{%for place in places%}
+dn: uniqueID={{exercise}},ou=missions,dc=emergency,dc=lu
+changetype:modify
+add: placeMember
+placeMember: cn={{place.placeID}},ou=places,ou=resources,dc=emergency,dc=lu
+{%endfor%}zoomLevel: 2

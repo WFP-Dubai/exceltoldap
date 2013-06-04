@@ -12,7 +12,9 @@ def parse_excel(uploaded_file):
     workbook = xlrd.open_workbook(settings.MEDIA_ROOT + uploaded_file.docfile.url)
     get_columns_user()    
     #Call import users
-    
+    mission_sheet = workbook.sheet_by_name(u'intro')
+    mission = mission_sheet.cell_value(0,1)
+    uploaded_file.missionName = mission
     users = workbook.sheet_by_name(u'Users')
     import_users(users)
     places = workbook.sheet_by_name(u'Places')
@@ -22,24 +24,6 @@ def parse_excel(uploaded_file):
     devices = workbook.sheet_by_name(u'Devices')
     import_devices(devices)
     
-    # update docfile
-    uploaded_file.imported = datetime.datetime.now()
-    uploaded_file.save()
-    return True
-
-def man_parse_xl(file):
-    workbook = xlrd.open_workbook(file)
-    
-    #Call import users
-    users = workbook.sheet_by_name(u'Users')
-    import_users(users)
-    places = workbook.sheet_by_name(u'Places')
-    import_places(places)
-    vehicles = workbook.sheet_by_name(u'Vehicles')
-    import_vehicles(vehicles)
-    
-    devices = workbook.sheet_by_name(u'Devices')
-    import_devices(devices)
     # update docfile
     uploaded_file.imported = datetime.datetime.now()
     uploaded_file.save()
@@ -191,7 +175,6 @@ def get_columns_user():
 def make_user(worksheet,curr_row):
     if worksheet.cell_value(curr_row,0) != '':
         item,new = EpicUser.objects.get_or_create(username =  worksheet.cell_value(curr_row,cusername))
-        print worksheet.cell_value(curr_row,cpersonal_title)
         item.personalTitle = worksheet.cell_value(curr_row,cpersonal_title)
         item.firstName = worksheet.cell_value(curr_row,cFirstName)
         item.lastName = worksheet.cell_value(curr_row,cLastName)
