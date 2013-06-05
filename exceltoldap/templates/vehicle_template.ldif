@@ -10,9 +10,10 @@ cn: {{vehicle.vehicleID}}{% if vehicle.description%}
 description: {{vehicle.description}}{%endif%}{%if vehicle.vhfCallsign%} 
 communicationUri: VHFcallsign:{{vehicle.vhfCallsign}}{%endif%}{%if vehicle.HFCallsign%} 
 communicationUri: HFcallsign:{{vehicle.HFCallsign}}{%endif%}{%if vehicle.licensePlate%}
-licencePlate: {{vehicle.licensePlate}}{%endif%}{%if vehicle.VIN%}
+licencePlate: {{vehicle.licensePlate}}
+displayName: {{vehicle.licensePlate}}{%if vehicle.department%} ({{vehicle.department}}){%endif%}{%endif%}{%if vehicle.VIN%}
 VIN: {{vehicle.VIN}}{%endif%}
-displayName: {{vehicle.licensePlate}}
+
 
 
 {% endfor %}

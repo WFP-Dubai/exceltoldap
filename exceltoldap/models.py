@@ -53,6 +53,8 @@ class EpicVehicle( models.Model):
     VIN = models.CharField(blank=True, null=True, max_length = 50)
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+    organization = models.CharField(blank=True, null=True, max_length = 20)
+    department = models.CharField(blank=True, null=True, max_length = 20)
 
 
 

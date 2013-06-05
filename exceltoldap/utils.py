@@ -160,9 +160,11 @@ def get_columns_user():
     cVehicleHfcallsign  =   4
     cLicensePlate=   5
     cVIN         =   6
-    cMotoTrboID  =   7
-    cSatamatics  =   8
-    cGVLP        =   9
+    cVehicleOrg     = 7
+    cVehicleDept    =   8
+    cMotoTrboID  =   9
+    cSatamatics  =   10
+    cGVLP        =   11
     cDeviceUID   =   0
     cDevDescription =   1
     cDevType        =   2
@@ -170,6 +172,7 @@ def get_columns_user():
     cDevUserID      =   4
     cDevVehicleID   =   5
     cDevPlacesID    =   6
+    
 
 
 def make_user(worksheet,curr_row):
@@ -239,6 +242,8 @@ def make_vehicle(worksheet,curr_row):
     item.HFCallsign = worksheet.cell_value(curr_row,cVehicleHfcallsign)
     item.licensePlate = worksheet.cell_value(curr_row,cLicensePlate)
     item.VIN = worksheet.cell_value(curr_row,cVIN)
+    item.organization = worksheet.cell_value(curr_row,cVehicleOrg)
+    item.department = worksheet.cell_value(curr_row,cVehicleDept)
     item.save()
     if new:
         pass
