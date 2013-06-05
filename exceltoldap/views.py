@@ -97,7 +97,7 @@ def missions(request):
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
-    #response['Content-Disposition'] = 'attachment; filename="missions.ldif"'
+    response['Content-Disposition'] = 'attachment; filename="missions.ldif"'
     return response
 
 
