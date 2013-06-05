@@ -131,6 +131,8 @@ def get_columns_user():
     global cDevUserID
     global cDevVehicleID
     global cDevPlacesID
+    global cVehicleOrg
+    global cVehicleDept
     cusername    	=   0
     cpersonal_title  =   1
     cFirstName  	    =   2
