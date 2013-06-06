@@ -40,6 +40,8 @@ class EpicUser( models.Model):
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        ordering = ["username"]
 
 
 
@@ -55,6 +57,9 @@ class EpicVehicle( models.Model):
     updated = models.DateTimeField(auto_now=True)
     organization = models.CharField(blank=True, null=True, max_length = 20)
     department = models.CharField(blank=True, null=True, max_length = 20)
+    
+    class Meta:
+        ordering = ["vehicleID"]
 
 
 
@@ -77,6 +82,8 @@ class EpicPlace( models.Model):
     longitude = models.FloatField( db_column = 'Longitude', null=True,blank = True)
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+    class Meta:
+        ordering = ["placeID"]
 
 
 class EpicDevice( models.Model):
@@ -89,7 +96,9 @@ class EpicDevice( models.Model):
     place = models.ForeignKey(EpicPlace,blank=True, null=True)
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    
+
+    class Meta:
+        ordering = ["deviceUid"]
 
     
     
