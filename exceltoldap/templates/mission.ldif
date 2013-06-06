@@ -34,4 +34,4 @@ dn: uniqueID={{exercise}},ou=missions,dc=emergency,dc=lu
 changetype:modify
 add: placeMember
 placeMember: cn={{place.placeID}},ou=places,ou=resources,dc=emergency,dc=lu
-{%endfor%}zoomLevel: 2
+{%endfor%}
