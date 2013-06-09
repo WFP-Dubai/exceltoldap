@@ -1,12 +1,81 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Excel File Upload Tool</title>   
+    	<style type="text/css">
+			* {
+				padding:0; margin:0;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			form, div {
+				padding:10px;
+				margin:10px;
+				border:1px solid silver;
+				-moz-border-radius:6px;
+				-webkit-border-radius:6px;
+				border-radius:6px;
+			}
+			form div {
+				margin:0px;
+				float:right;
+				width:auto;
+			}
+			br {
+				clear:both;
+			}
+			h2, h3 {
+				color:#063;
+			}
+			form div, a {
+				-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+				-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+				box-shadow:inset 0px 1px 0px 0px #caefab;
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+				background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+				background-color:#77d42a;
+				-moz-border-radius:6px;
+				-webkit-border-radius:6px;
+				border-radius:6px;
+				border:1px solid #268a16;
+				display:inline-block;
+				color:#306108;
+				font-size:15px;
+				padding:6px 24px;
+			}
+			a {
+				font-weight:bold;
+				text-decoration:none;
+				text-shadow:1px 1px 0px #aade7c;
+			}
+			a:hover {
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+				background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+				background-color:#5cb811;
+			}
+			a:active {
+				position:relative;
+				top:1px;
+				color:#C00;
+			}
+			small {
+				float:right;
+				margin-right:20px;
+			}
+        </style>
     </head>
     <body>
 	<form action="{% url "list_documents" %}" method="post" enctype="multipart/form-data">
+	        <div>
+            <h3>Latest File</h3>
+            <strong>Filename : </strong> {{last_document.docfile.name}}  
+            <br/><strong>Uploaded : </strong> {{last_document.uploaded}} GMT
+            <br/><strong>Mission : </strong> {{last_document.missionName}}
+        </div>
 	    {% csrf_token %}
+	    <h2>File Upload</h2>
 	    <p>{{ form.non_field_errors }}</p>
 	    <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
 	    <p>
@@ -15,19 +84,17 @@
 	    </p>
 	    <p><input type="submit" value="Upload" /></p>
 	</form>
-Latest File: {{last_document.docfile.name}} 
-<br />Uploaded on :{{last_document.uploaded}} GMT
-Mission: {{last_document.missionName}}
-	<div style="padding:10px; margins:10px; border:1px solid silver;">
-		<a href="users/" >Export Users</a> &middot;
-		<a href="vehicles/" >Export Vehicles</a> &middot; 
-		<a href="places/" >Export Places</a>&middot;
-		<a href="devices/" >Export Devices/Groups</a>
-		<a href="missions/" >Export Missions</a>
-		<br/>
-		<a href="../all/">Export all of the above</a>
-		<hr/>
+	<div>
+    	<h2>LDIF export</h2>
+            <a href="users/" >Users</a>
+            <a href="vehicles/" >Vehicles</a>
+            <a href="places/" >Places</a>
+            <a href="devices/" >Devices/Groups</a>
+            <a href="missions/" >Missions</a>
+            &middot;
+			<a href="../all/">All of the above</a>
 	</div>
+	<small>v 1.45</small>
 <small>v 1.45</small>
     </body>
 </html> 
