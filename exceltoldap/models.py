@@ -1,12 +1,14 @@
 #LDAP Interface
 from django.db import models
+import os
 
 class Document(models.Model):
     docfile = models.FileField(upload_to='%Y/%m/%d')
     missionName = models.CharField(max_length = 150,blank=True, null=True)
     uploaded = models.DateTimeField(auto_now_add=True)
     imported = models.DateTimeField(blank=True, null=True)
-
+    def filename(self):
+        return os.path.basename(self.docfile.name)
 
 
 class EpicUser( models.Model):

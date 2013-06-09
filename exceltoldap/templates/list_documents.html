@@ -70,7 +70,7 @@
 	<form action="{% url "list_documents" %}" method="post" enctype="multipart/form-data">
 	        <div>
             <h3>Latest File</h3>
-            <strong>Filename : </strong> {{last_document.docfile.name}}  
+            <strong>Filename : </strong> {{last_document.filename}}  
             <br/><strong>Uploaded : </strong> {{last_document.uploaded|date:"Y-m-d H:i"}} GMT
             <br/><strong>Mission : </strong> {{last_document.missionName}}
         </div>
