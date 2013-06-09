@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load tz %}{% localtime off %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -71,7 +71,7 @@
 	        <div>
             <h3>Latest File</h3>
             <strong>Filename : </strong> {{last_document.docfile.name}}  
-            <br/><strong>Uploaded : </strong> {{last_document.uploaded}} GMT
+            <br/><strong>Uploaded : </strong> {{last_document.uploaded|date:"Y-m-d H:i"}} GMT
             <br/><strong>Mission : </strong> {{last_document.missionName}}
         </div>
 	    {% csrf_token %}
@@ -98,3 +98,4 @@
 
     </body>
 </html> 
+{% endlocaltime %}
