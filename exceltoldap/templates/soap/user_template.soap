@@ -1,3 +1,4 @@
+{%for user in users%}
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:x="http://hitec.lu/pss/soap/ds/out/4.x">
    <soapenv:Header/>
    <soapenv:Body>
@@ -72,3 +73,4 @@
       </x:createPSSUUser>
    </soapenv:Body>
 </soapenv:Envelope>
+{%endfor%}

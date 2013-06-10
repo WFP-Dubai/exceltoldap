@@ -1,0 +1,13 @@
+{% include 'user_template.soap' %}
+
+
+{% include 'vehicle_template.soap' %}
+
+
+{% include 'place_template.soap' %}
+
+
+{% include 'devices_template.soap' %}
+
+
+{% include 'mission.soap' %}

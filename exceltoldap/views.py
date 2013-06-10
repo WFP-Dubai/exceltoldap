@@ -70,6 +70,17 @@ def vehicles(request):
     )
     response['Content-Disposition'] = 'attachment; filename="vehicles.ldif"'
     return response
+
+def vehicles_soap(request):
+    vehicles = EpicVehicle.objects.all()
+    response = render_to_response(
+        'soap/vehicle_template.soap',
+        {'vehicles': vehicles},
+        context_instance=RequestContext(request),
+        mimetype="text/text"
+    )
+    response['Content-Disposition'] = 'attachment; filename="vehicles.soap"'
+    return response
     
 
 def places(request):
@@ -81,6 +92,17 @@ def places(request):
         mimetype="text/text"
     )
     response['Content-Disposition'] = 'attachment; filename="places.ldif"'
+    return response
+
+def places_soap(request):
+    places = EpicPlace.objects.all()
+    response = render_to_response(
+        'soap/place_template.soap',
+        {'places': places},
+        context_instance=RequestContext(request),
+        mimetype="text/text"
+    )
+    response['Content-Disposition'] = 'attachment; filename="places.soap"'
     return response
 
 def devices(request):
@@ -97,6 +119,21 @@ def devices(request):
     response['Content-Disposition'] = 'attachment; filename="devices.ldif"'
     return response
 
+def devices_soap(request):
+    dev_places = EpicDevice.objects.exclude(place = None)
+    dev_vehicles = EpicDevice.objects.exclude(vehicle = None)
+    dev_users = EpicDevice.objects.exclude(owner = None)
+    devices = EpicDevice.objects.all() 
+    response = render_to_response(
+        'soap/devices_template.soap',
+        {'devices_places': dev_places,'devices_vehicles': dev_vehicles,'devices_users': dev_users, 'devices':devices},
+        context_instance=RequestContext(request),
+        mimetype="text/text"
+    )
+    response['Content-Disposition'] = 'attachment; filename="devices.soap"'
+    return response
+
+
 def missions(request):
     places = EpicPlace.objects.all()
     vehicles = EpicVehicle.objects.all()
@@ -112,6 +149,20 @@ def missions(request):
     response['Content-Disposition'] = 'attachment; filename="missions.ldif"'
     return response
 
+def missions_soap(request):
+    places = EpicPlace.objects.all()
+    vehicles = EpicVehicle.objects.all()
+    users = EpicUser.objects.all()
+    last_document = Document.objects.latest('uploaded')
+    mission = last_document.missionName
+    response = render_to_response(
+        'soap/mission.soap',
+        {'places': places,'vehicles': vehicles,'users': users,'exercise':mission},
+        context_instance=RequestContext(request),
+        mimetype="text/text"
+    )
+    response['Content-Disposition'] = 'attachment; filename="missions.soap"'
+    return response
 
 def all_items(request):
     places = EpicPlace.objects.all()
@@ -130,4 +181,23 @@ def all_items(request):
         mimetype="text/text"
     )
     response['Content-Disposition'] = 'attachment; filename="all.ldif"'
+    return response
+
+def all_items_soap(request):
+    places = EpicPlace.objects.all()
+    vehicles = EpicVehicle.objects.all()
+    users = EpicUser.objects.all()   
+    dev_places = EpicDevice.objects.exclude(place = None)
+    dev_vehicles = EpicDevice.objects.exclude(vehicle = None)
+    dev_users = EpicDevice.objects.exclude(owner = None)
+    devices = EpicDevice.objects.all()
+    last_document = Document.objects.latest('uploaded')
+    mission = last_document.missionName      
+    response = render_to_response(
+        'soap/full.soap',
+        {'places': places,'vehicles': vehicles,'users': users,'devices_places': dev_places,'devices_vehicles': dev_vehicles,'devices_users': dev_users, 'devices':devices,'exercise':mission},
+        context_instance=RequestContext(request),
+        mimetype="text/text"
+    )
+    response['Content-Disposition'] = 'attachment; filename="all.soap"'
     return response
