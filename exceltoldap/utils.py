@@ -239,7 +239,7 @@ def make_place(worksheet,curr_row):
 def make_vehicle(worksheet,curr_row):
     item,new = EpicVehicle.objects.get_or_create(vehicleID =  worksheet.cell_value(curr_row,cVehicleID))
     item.description = worksheet.cell_value(curr_row,cVehicleDescription)
-    item.type = worksheet.cell_value(curr_row,cVehicleID)
+    item.type = worksheet.cell_value(curr_row,cVehicleType)
     item.vhfCallsign = worksheet.cell_value(curr_row,cVehicleHfcallsign)
     item.HFCallsign = worksheet.cell_value(curr_row,cVehicleHfcallsign)
     item.licensePlate = worksheet.cell_value(curr_row,cLicensePlate)
