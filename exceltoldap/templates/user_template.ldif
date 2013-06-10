@@ -21,7 +21,8 @@ ou: {{user.department}}{%endif%}{%if user.personalTitle%}
 personalTitle: {{user.personalTitle}}{%endif%}{%if user.zip%}
 postalCode: {{user.zip}}{%endif%}{%if user.preferredLanguage%}
 preferredLanguage: {{user.preferredLanguage}}{%endif%}{%if user.street%}
-street: {{user.street}}{%endif%}{%if user.username%}
+street: {{user.street}}{%endif%}{%if user.city%}
+l: {{user.city}}{%endif%}{%if user.username%}
 uid: {{user.username}}{%endif%}{%if user.skype%}
 communicationUri: skype:{{user.skype}}{%endif%}{%if user.msnim%}
 communicationUri: msnim:{{user.msnim}}{%endif%}{%if user.vhfCallsign%}
