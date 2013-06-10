@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'exceltoldap.views.list_documents', name='list_documents'),
     url(r'^users/$','exceltoldap.views.users', name='users'),
+    url(r'^users_soap/$','exceltoldap.views.users_soap', name='users_soap'),
     url(r'^vehicles/$','exceltoldap.views.vehicles', name='vehicles'),
     url(r'^devices/$','exceltoldap.views.devices', name='devices'),
     url(r'^places/$','exceltoldap.views.places', name='places'),

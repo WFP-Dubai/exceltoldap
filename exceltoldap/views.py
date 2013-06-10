@@ -48,6 +48,18 @@ def users(request):
     response['Content-Disposition'] = 'attachment; filename="users.ldif"'
     return response
 
+def users_soap(request):
+    users = EpicUser.objects.all()
+    response = render_to_response(
+        'soap/user_template.soap',
+        {'users': users},
+        context_instance=RequestContext(request),
+        mimetype="text/text"
+    )
+    response['Content-Disposition'] = 'attachment; filename="users.soap"'
+    return response
+
+
 def vehicles(request):
     vehicles = EpicVehicle.objects.all()
     response = render_to_response(
