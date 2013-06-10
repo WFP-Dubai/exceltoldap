@@ -18,7 +18,8 @@ primaryMail: {{user.eMail}}
 communicationUri: sip:{{user.eMail}}{%endif%}{%if user.organization%}
 o: {{user.organization}}{%endif%}{%if user.department%}
 ou: {{user.department}}{%endif%}{%if user.personalTitle%}
-personalTitle: {{user.personalTitle}}{%endif%}{%if user.zip%}
+personalTitle: {{user.personalTitle}}{%endif%}{%if user.jobTitle%}
+jobTitle: {{user.jobTitle}}{%endif%}{%if user.zip%}
 postalCode: {{user.zip}}{%endif%}{%if user.preferredLanguage%}
 preferredLanguage: {{user.preferredLanguage}}{%endif%}{%if user.street%}
 street: {{user.street}}{%endif%}{%if user.city%}

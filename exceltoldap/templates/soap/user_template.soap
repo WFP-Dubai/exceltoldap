@@ -5,70 +5,82 @@
       <x:createPSSUUser>
          <token>?</token>
          <pssuUser>
+{%if user.username%}
             <uid>{{user.username}}</uid>
+{%endif%}
+{%if user.personalTitle%}
             <personalTitle>{{user.personalTitle}}</personalTitle>
+{%endif%}
+{%if user.firstName%}
             <firstname>{{user.firstName}}</firstname>
+{%endif%}
+{%if user.lastName%}
             <lastname>{{user.lastName}}</lastname>
+{%endif%}
+{%if user.jobTitle%}
+            <jobTitle>{{user.jobTitle}}</jobTitle>
+{%endif%}
+{%if user.department%}
             <organizationalUnitName>{{user.department}}</organizationalUnitName>
+{%endif%}
+{%if user.organization%}
             <organizationNames>{{user.organization}}</organizationNames>
-            <country>{{user.country}}</country>
-            <password>e1NIQX1mRXFOQ2NvM1lxOWg1WlVnbEQzQ1pKVDRsQnM9</password>
-            <preferredLanguage>en</preferredLanguage>
+{%endif%}
+{%if user.street%}
             <streetAddress>{{user.street}}</streetAddress>
-            <userEnabled>TRUE</userEnabled>
+{%endif%}
+{%if user.city%}
+            <localityName>{{user.city}}</localityName>
+{%endif%}
+{%if user.country%}
+            <country>{{user.country}}</country>
+{%endif%}
 {%if user.eMail%}
             <communicationUri>sip:{{user.eMail}}</communicationUri>
-            <primaryMail>{{user.eMail}}</primaryMail>{%endif%}
+            <primaryMail>{{user.eMail}}</primaryMail>
+{%endif%}
 {%if user.skype%}
-            <communicationUri>skype:{{user.skype}}</communicationUri>{%endif%}
+            <communicationUri>skype:{{user.skype}}</communicationUri>
+{%endif%}
 {%if user.msnim%}
-            <communicationUri>msnim:{{user.msnim}}</communicationUri>{%endif%}
+            <communicationUri>msnim:{{user.msnim}}</communicationUri>
+{%endif%}
 {%if user.vhfCallsign%}
-            <communicationUri>VHFcallsign:{{user.vhfCallsign}}</communicationUri>{%endif%}
+            <communicationUri>VHFcallsign:{{user.vhfCallsign}}</communicationUri>
+{%endif%}
 {%if user.mobilePhoneNumber%}
             <phones>
                <description>Mobile</description>
                <number>{{user.mobilePhoneNumber}}</number>
-            </phones>{%endif%}
+            </phones>
+{%endif%}
 {%if user.wavePhoneNumber%}
             <phones>
                <description>Radio</description>
                <number>{{user.wavePhoneNumber}}</number>
-            </phones>{%endif%}
+            </phones>
+{%endif%}
 {%if user.foodsatPhoneNumber%}
             <phones>
                <description>FoodSat</description>
                <number>{{user.foodsatPhoneNumber}}</number>
-            </phones>{%endif%}
+            </phones>
+{%endif%}
 {%if user.satelitePhoneNumber%}
             <phones>
                <description>Thuraya</description>
                <number>{{user.satelitePhoneNumber}}</number>
-            </phones>{%endif%}
+            </phones>
+{%endif%}
 {%if user.officePhoneNumber%}
             <phones>
                <description>Office</description>
                <number>{{user.officePhoneNumber}}</number>
-            </phones>{%endif%}
-            <localityName></localityName>
-            <jobTitle></jobTitle>
-            <birthDate></birthDate>
-            <gender></gender>
-			<assignedDevices></assignedDevices>
-            <assignedMissions></assignedMissions>
-            <assignedProfiles></assignedProfiles>
-            <assignedUserGroups></assignedUserGroups>
-            <facsimileTelephoneNumber></facsimileTelephoneNumber>
-            <homePhone></homePhone>
-            <jpegPhoto></jpegPhoto>
-            <mobile></mobile>
-            <ownedMissions></ownedMissions>
-            <pager></pager>
-            <postalCode></postalCode>
-            <primaryLocalisationDevice></primaryLocalisationDevice>
-            <quotaInMb></quotaInMb>
-            <surfaceID></surfaceID>
-            <tracePrivacy></tracePrivacy>
+            </phones>
+{%endif%}
+            <userEnabled>TRUE</userEnabled>
+            <password>e1NIQX1mRXFOQ2NvM1lxOWg1WlVnbEQzQ1pKVDRsQnM9</password>
+            <preferredLanguage>en</preferredLanguage>
          </pssuUser>
       </x:createPSSUUser>
    </soapenv:Body>
