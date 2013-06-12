@@ -9,7 +9,7 @@
             <assignedDevices>?</assignedDevices>{%if exercise%}
             <assignedMissions>{{exercise}}</assignedMissions>{%endif%}{%if vehicle.vhfCallsign%}
 			<communicationUri>VHFcallsign:{{vehicle.vhfCallsign}}</communicationUri>{%endif%}{%if vehicle.HFCallsign%}
-			<communicationUri>HFcallsign:{{vehicle.HFCallsign}}</communicationUri>{%endif%}{%if vehicle.organization%}
+			<communicationUri>HFcallsign:{{vehicle.HFCallsign|floatformat:"0"}}</communicationUri>{%endif%}{%if vehicle.organization%}
 			<organizationNames>{{vehicle.organization}}</organizationNames>{%endif%}
             <uid>{{vehicle.vehicleID}}</uid>{% if vehicle.description%}
             <description>{{vehicle.description}}</description>{%endif%}
