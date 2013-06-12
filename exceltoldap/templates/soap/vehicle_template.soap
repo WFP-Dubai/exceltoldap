@@ -1,3 +1,5 @@
+{%for vehicle in vehicles%}
+
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:x="http://hitec.lu/pss/soap/ds/out/4.x">
    <soapenv:Header/>
    <soapenv:Body>
@@ -20,3 +22,5 @@
       </x:createPSSUVehicle>
    </soapenv:Body>
 </soapenv:Envelope>
+
+{%endfor%}
