@@ -8,13 +8,13 @@
          <token>?</token>
          <!--Optional:-->
          <pssuDevice>
-			{% if device.place.id%}
+			{% if device.place_id%}
 			<assignedPlaces>?</assignedPlaces>{%endif%}
 
-            {% if device.user.id%}
+            {% if device.owner_id%}
 			<assignedUsers>?</assignedUsers>{%endif%}
 
-            {% if device.vehicle.id%}
+            {% if device.vehicle_id%}
 			<assignedVehicles>?</assignedVehicles>{%endif%}
 
             <description>{{device.description}}</description>
