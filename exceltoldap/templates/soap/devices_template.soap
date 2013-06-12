@@ -1,0 +1,29 @@
+{%for device in devices%}
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:x="http://hitec.lu/pss/soap/ds/out/4.x">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <x:createPSSUDevice>
+         <!--Optional:-->
+         <token>?</token>
+         <!--Optional:-->
+         <pssuDevice>
+			{% if device.place.id%}
+			<assignedPlaces>?</assignedPlaces>{%endif%}
+
+            {% if device.user.id%}
+			<assignedUsers>?</assignedUsers>{%endif%}
+
+            {% if device.vehicle.id%}
+			<assignedVehicles>?</assignedVehicles>{%endif%}
+
+            <description>{{device.description}}</description>
+            <deviceCapabilities>gps</deviceCapabilities>
+            <displayName>{{device.description}}</displayName>
+            <uid>{{device.deviceUid}}</uid>
+         </pssuDevice>
+      </x:createPSSUDevice>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+{%endfor%}
