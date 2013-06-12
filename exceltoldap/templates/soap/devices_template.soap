@@ -9,14 +9,11 @@
          <!--Optional:-->
          <pssuDevice>
 			{% if device.place_id%}
-			<assignedPlaces>?</assignedPlaces>{%endif%}
-
+			<assignedPlaces>{{device.place_id}}</assignedPlaces>{%endif%}
             {% if device.owner_id%}
-			<assignedUsers>?</assignedUsers>{%endif%}
-
+			<assignedUsers>{{device.owner_id}}</assignedUsers>{%endif%}
             {% if device.vehicle_id%}
-			<assignedVehicles>?</assignedVehicles>{%endif%}
-
+			<assignedVehicles>{{device.vehicle_id}}</assignedVehicles>{%endif%}
             <description>{{device.description}}</description>
             <deviceCapabilities>gps</deviceCapabilities>
             <displayName>{{device.description}}</displayName>
