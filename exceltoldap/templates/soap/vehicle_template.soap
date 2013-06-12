@@ -1,0 +1,22 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:x="http://hitec.lu/pss/soap/ds/out/4.x">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <x:createPSSUVehicle>
+         <token>?</token>
+         <pssuVehicle>
+            <assignedDevices>?</assignedDevices>{%if exercise%}
+            <assignedMissions>{{exercise}}</assignedMissions>{%endif%}{%if vehicle.vhfCallsign%}
+			<communicationUri>VHFcallsign:{{vehicle.vhfCallsign}}</communicationUri>{%endif%}{%if vehicle.HFCallsign%}
+			<communicationUri>VHFcallsign:{{vehicle.HFCallsign}}</communicationUri>{%endif%}{%if vehicle.organization%}
+			<organizationNames>{{vehicle.organization}}</organizationNames>{%endif%}
+            <uid>{{vehicle.vehicleID}}</uid>{% if vehicle.description%}
+            <description>{{vehicle.description}}</description>{%endif%}
+            <displayName>{{vehicle.licensePlate}}{%if vehicle.department%} ({{vehicle.department}}){%endif%}</displayName>
+            <licencePlate>{{vehicle.licensePlate}}</licencePlate>
+            <primaryLocalisationDevice>?</primaryLocalisationDevice>
+            <type>{{vehicle.type}}</type>{%if vehicle.VIN%}
+            <vin>{{vehicle.VIN}}</vin>{%endif%}
+         </pssuVehicle>
+      </x:createPSSUVehicle>
+   </soapenv:Body>
+</soapenv:Envelope>

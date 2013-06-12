@@ -12,8 +12,8 @@ communicationUri: VHFcallsign:{{vehicle.vhfCallsign}}{%endif%}{%if vehicle.HFCal
 communicationUri: HFcallsign:{{vehicle.HFCallsign}}{%endif%}{%if vehicle.licensePlate%}
 licencePlate: {{vehicle.licensePlate}}
 displayName: {{vehicle.licensePlate}}{%if vehicle.department%} ({{vehicle.department}}){%endif%}{%endif%}{%if vehicle.VIN%}
-VIN: {{vehicle.VIN}}{%endif%}
-
+VIN: {{vehicle.VIN}}{%endif%}{%if vehicle.organization%}
+o: {{vehicle.organization}}{%endif%}
 
 
 {% endfor %}

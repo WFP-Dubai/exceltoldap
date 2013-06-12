@@ -4,80 +4,43 @@
    <soapenv:Body>
       <x:createPSSUUser>
          <token>?</token>
-         <pssuUser>
-{%if user.username%}
-            <uid>{{user.username}}</uid>
-{%endif%}
-{%if user.personalTitle%}
-            <personalTitle>{{user.personalTitle}}</personalTitle>
-{%endif%}
-{%if user.firstName%}
-            <firstname>{{user.firstName}}</firstname>
-{%endif%}
-{%if user.lastName%}
-            <lastname>{{user.lastName}}</lastname>
-{%endif%}
-{%if user.jobTitle%}
-            <jobTitle>{{user.jobTitle}}</jobTitle>
-{%endif%}
-{%if user.department%}
-            <organizationalUnitName>{{user.department}}</organizationalUnitName>
-{%endif%}
-{%if user.organization%}
-            <organizationNames>{{user.organization}}</organizationNames>
-{%endif%}
-{%if user.street%}
-            <streetAddress>{{user.street}}</streetAddress>
-{%endif%}
-{%if user.city%}
-            <localityName>{{user.city}}</localityName>
-{%endif%}
-{%if user.country%}
-            <country>{{user.country}}</country>
-{%endif%}
-{%if user.eMail%}
+         <pssuUser>{%if exercise%}
+            <assignedMissions>{{exercise}}</assignedMissions>{%endif%}{%if user.username%}
+            <uid>{{user.username}}</uid>{%endif%}{%if user.personalTitle%}
+            <personalTitle>{{user.personalTitle}}</personalTitle>{%endif%}{%if user.firstName%}
+            <firstname>{{user.firstName}}</firstname>{%endif%}{%if user.lastName%}
+            <lastname>{{user.lastName}}</lastname>{%endif%}{%if user.jobTitle%}
+            <jobTitle>{{user.jobTitle}}</jobTitle>{%endif%}{%if user.department%}
+            <organizationalUnitName>{{user.department}}</organizationalUnitName>{%endif%}{%if user.organization%}
+            <organizationNames>{{user.organization}}</organizationNames>{%endif%}{%if user.street%}
+            <streetAddress>{{user.street}}</streetAddress>{%endif%}{%if user.city%}
+            <localityName>{{user.city}}</localityName>{%endif%}{%if user.country%}
+            <country>{{user.country}}</country>{%endif%}{%if user.eMail%}
             <communicationUri>sip:{{user.eMail}}</communicationUri>
-            <primaryMail>{{user.eMail}}</primaryMail>
-{%endif%}
-{%if user.skype%}
-            <communicationUri>skype:{{user.skype}}</communicationUri>
-{%endif%}
-{%if user.msnim%}
-            <communicationUri>msnim:{{user.msnim}}</communicationUri>
-{%endif%}
-{%if user.vhfCallsign%}
-            <communicationUri>VHFcallsign:{{user.vhfCallsign}}</communicationUri>
-{%endif%}
-{%if user.mobilePhoneNumber%}
+            <primaryMail>{{user.eMail}}</primaryMail>{%endif%}{%if user.skype%}
+            <communicationUri>skype:{{user.skype}}</communicationUri>{%endif%}{%if user.msnim%}
+            <communicationUri>msnim:{{user.msnim}}</communicationUri>{%endif%}{%if user.vhfCallsign%}
+            <communicationUri>VHFcallsign:{{user.vhfCallsign}}</communicationUri>{%endif%}{%if user.mobilePhoneNumber%}
             <phones>
                <description>Mobile</description>
                <number>{{user.mobilePhoneNumber}}</number>
-            </phones>
-{%endif%}
-{%if user.wavePhoneNumber%}
+            </phones>{%endif%}{%if user.wavePhoneNumber%}
             <phones>
                <description>Radio</description>
                <number>{{user.wavePhoneNumber}}</number>
-            </phones>
-{%endif%}
-{%if user.foodsatPhoneNumber%}
+            </phones>{%endif%}{%if user.foodsatPhoneNumber%}
             <phones>
                <description>FoodSat</description>
                <number>{{user.foodsatPhoneNumber}}</number>
-            </phones>
-{%endif%}
-{%if user.satelitePhoneNumber%}
+            </phones>{%endif%}{%if user.satelitePhoneNumber%}
             <phones>
                <description>Thuraya</description>
                <number>{{user.satelitePhoneNumber}}</number>
-            </phones>
-{%endif%}
-{%if user.officePhoneNumber%}
+            </phones>{%endif%}{%if user.officePhoneNumber%}
             <phones>
                <description>Office</description>
                <number>{{user.officePhoneNumber}}</number>
-            </phones>
-{%endif%}
+            </phones>{%endif%}
             <userEnabled>TRUE</userEnabled>
             <password>e1NIQX1mRXFOQ2NvM1lxOWg1WlVnbEQzQ1pKVDRsQnM9</password>
             <preferredLanguage>en</preferredLanguage>
