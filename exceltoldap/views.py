@@ -39,6 +39,8 @@ def list_documents(request):
 
 def users(request):
     users = EpicUser.objects.all()
+    last_document = Document.objects.latest('uploaded')
+    mission = last_document.missionName
     response = render_to_response(
         'user_template.ldif',
         {'users': users},
@@ -50,9 +52,11 @@ def users(request):
 
 def users_soap(request):
     users = EpicUser.objects.all()
+    last_document = Document.objects.latest('uploaded')
+    mission = last_document.missionName
     response = render_to_response(
         'soap/user_template.soap',
-        {'users': users},
+        {'users': users,'exercise':mission},
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
@@ -73,9 +77,11 @@ def vehicles(request):
 
 def vehicles_soap(request):
     vehicles = EpicVehicle.objects.all()
+    last_document = Document.objects.latest('uploaded')
+    mission = last_document.missionName
     response = render_to_response(
         'soap/vehicle_template.soap',
-        {'vehicles': vehicles},
+        {'vehicles': vehicles,'exercise':mission},
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
@@ -85,9 +91,11 @@ def vehicles_soap(request):
 
 def places(request):
     places = EpicPlace.objects.all()
+    last_document = Document.objects.latest('uploaded')
+    mission = last_document.missionName
     response = render_to_response(
         'place_template.ldif',
-        {'places': places},
+        {'places': places,'exercise':mission},
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
@@ -96,9 +104,11 @@ def places(request):
 
 def places_soap(request):
     places = EpicPlace.objects.all()
+    last_document = Document.objects.latest('uploaded')
+    mission = last_document.missionName
     response = render_to_response(
         'soap/place_template.soap',
-        {'places': places},
+        {'places': places,'exercise':mission},
         context_instance=RequestContext(request),
         mimetype="text/text"
     )
