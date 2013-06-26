@@ -9,7 +9,8 @@ class Document(models.Model):
     imported = models.DateTimeField(blank=True, null=True)
     def filename(self):
         return os.path.basename(self.docfile.name)
-
+    def __unicode__(self):
+        return self.missionName
 
 class EpicUser( models.Model):
     username = models.CharField(primary_key=True, max_length = 50)
@@ -44,7 +45,8 @@ class EpicUser( models.Model):
 
     class Meta:
         ordering = ["username"]
-
+    def __unicode__(self):
+        return self.username
 
 
 class EpicVehicle( models.Model):
@@ -62,6 +64,8 @@ class EpicVehicle( models.Model):
     
     class Meta:
         ordering = ["vehicleID"]
+    def __unicode__(self):
+        return self.vehicleID
 
 
 
@@ -86,7 +90,8 @@ class EpicPlace( models.Model):
     updated = models.DateTimeField(auto_now=True)
     class Meta:
         ordering = ["placeID"]
-
+    def __unicode__(self):
+        return self.placeID
 
 class EpicDevice( models.Model):
     deviceUid = models.CharField(max_length = 50, primary_key=True)
@@ -101,6 +106,7 @@ class EpicDevice( models.Model):
 
     class Meta:
         ordering = ["deviceUid"]
-
+    def __unicode__(self):
+        return self.deviceUid
     
     
