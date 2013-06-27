@@ -184,7 +184,7 @@ def make_user(worksheet,curr_row):
         item.firstName = worksheet.cell_value(curr_row,cFirstName)
         item.lastName = worksheet.cell_value(curr_row,cLastName)
         item.eMail = worksheet.cell_value(curr_row,ceMail)
-        item.cellPhoneNumber = worksheet.cell_value(curr_row,cmobile)
+        item.mobilePhoneNumber = worksheet.cell_value(curr_row,cmobile)
         item.satelitePhoneNumber = worksheet.cell_value(curr_row,csatellite)
         item.officePhoneNumber  = worksheet.cell_value(curr_row,coffice)
         item.wavePhoneNumber = worksheet.cell_value(curr_row,cradio)
