@@ -29,8 +29,8 @@ communicationUri: skype:{{user.skype}}{%endif%}{%if user.msnim%}
 communicationUri: msnim:{{user.msnim}}{%endif%}{%if user.vhfCallsign%}
 communicationUri: VHFcallsign:{{user.vhfCallsign}}{%endif%}{%if user.mobilePhoneNumber%}
 otherPhones: {{user.mobilePhoneNumber}}|Mobile{%endif%}{%if user.wavePhoneNumber%}
-otherPhones: {{user.wavePhoneNumber}}|Radio{%endif%}{%if user.foodsatPhoneNumber%}
-otherPhones: {{user.foodsatPhoneNumber}}|FoodSat{%endif%}{%if user.satelitePhoneNumber%}
+otherPhones: {{user.wavePhoneNumber}}|Radio{%endif%}{%if user.foodsat%}
+otherPhones: {{user.foodsat}}|FoodSat{%endif%}{%if user.satelitePhoneNumber%}
 otherPhones: {{user.satelitePhoneNumber}}|Thuraya{%endif%}{%if user.officePhoneNumber%}
 otherPhones: {{user.officePhoneNumber}}|Office{%endif%}
 userEnabled: TRUE

@@ -28,10 +28,10 @@
             <phones>
                <description>Radio</description>
                <number>{{user.wavePhoneNumber}}</number>
-            </phones>{%endif%}{%if user.foodsatPhoneNumber%}
+            </phones>{%endif%}{%if user.foodsat%}
             <phones>
                <description>FoodSat</description>
-               <number>{{user.foodsatPhoneNumber}}</number>
+               <number>{{user.foodsat}}</number>
             </phones>{%endif%}{%if user.satelitePhoneNumber%}
             <phones>
                <description>Thuraya</description>
