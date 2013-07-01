@@ -30,9 +30,17 @@ def list_documents(request):
     except:
         last_document = None
     # Render list_documents page with the documents and the form
+    places = EpicPlace.objects.all()
+    vehicles = EpicVehicle.objects.all()
+    users = EpicUser.objects.all()   
+    dev_places = EpicDevice.objects.exclude(place = None)
+    dev_vehicles = EpicDevice.objects.exclude(vehicle = None)
+    dev_users = EpicDevice.objects.exclude(owner = None)
+    devices = EpicDevice.objects.all()
+    mission = last_document.missionName 
     return render_to_response(
         'list_documents.html',
-        {'documents': documents,'last_document':last_document, 'form': form},
+        {'documents': documents,'last_document':last_document, 'form': form,'places': places,'vehicles': vehicles,'users': users,'devices_places': dev_places,'devices_vehicles': dev_vehicles,'devices_users': dev_users, 'devices':devices},
         context_instance=RequestContext(request)
     )
 
