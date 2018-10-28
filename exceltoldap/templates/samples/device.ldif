@@ -1,9 +1,0 @@
-version: 1
-
-dn: cn=trackMe-13196624,ou=devices,dc=emergency,dc=lu
-objectClass: mwdevice
-objectClass: top
-cn: trackMe-13196624
-description: Motorola DM3601
-devicecapability: cn=gps,ou=sensorsThresholds,dc=emergency,dc=lu
-
