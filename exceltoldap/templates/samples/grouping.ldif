@@ -1,9 +1,0 @@
-version: 1
-
-dn: cn=user_tcarlander_0,ou=groups,dc=emergency,dc=lu
-objectClass: top
-objectClass: groupOfNames
-cn: user_tcarlander_0
-member: uid=tcarlander,ou=users,ou=people,dc=emergency,dc=lu
-member: cn=trackMe-9735,ou=devices,dc=emergency,dc=lu
-
